@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordersune</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -14,6 +14,14 @@
     <style>
         * {
             font-family: 'Roboto';
+        }
+
+        .pos div:nth-child(odd) {
+            background-color: #D24321;
+        }
+
+        .pos div:nth-child(even) {
+            background: #F27322;
         }
     </style>
 </head>
@@ -60,7 +68,8 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto max-sm:border max-sm:rounded-lg max-sm:shadow" id="navbar-default">
+                <div class="hidden w-full md:block md:w-auto max-sm:border max-sm:rounded-lg max-sm:shadow"
+                    id="navbar-default">
                     <ul
                         class="flex flex-col p-4 md:p-0 rounded-lg md:flex-row rtl:space-x-reverse text-[#002959] md:items-center">
                         <li>
@@ -74,96 +83,132 @@
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar"
                                 class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
-                                <ul class="p-2 text-sm font-medium space-y-3"
-                                    aria-labelledby="dropdownLargeButton">
+                                <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/point-of-sale.png" alt="">Point of sale</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/point-of-sale.png" alt="">Point of
+                                            sale</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/kiosk.png" alt="">Kiosk Self Service</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/kiosk.png" alt="">Kiosk Self Service</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/kitchen.png" alt="">Kitchen Display System</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/kitchen.png" alt="">Kitchen Display
+                                            System</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/order-tracking.png" alt="">Order Tracking</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/order-tracking.png" alt="">Order
+                                            Tracking</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/ecommerce.png" alt="">Ecommerce</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/ecommerce.png" alt="">Ecommerce</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/digital.png" alt="">Digital Menu Boards</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/digital.png" alt="">Digital Menu
+                                            Boards</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/call-center.png" alt="">Call Center Ordering</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/call-center.png" alt="">Call Center
+                                            Ordering</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/social-media.png" alt="">Social Media Ordering</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/social-media.png" alt="">Social Media
+                                            Ordering</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/reservations.png" alt="">Reservations</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/reservations.png" alt="">Reservations</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/loyalty-pro.png" alt="">Loyalty Program</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/loyalty-pro.png" alt="">Loyalty
+                                            Program</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/inventory-management.png" alt="">Inventory Management</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/inventory-management.png" alt="">Inventory
+                                            Management</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/product-recommendations.png" alt="">Product Recommendations <br> using AI</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/product-recommendations.png"
+                                                alt="">Product Recommendations <br> using AI</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/tableside-ordering.png" alt="">Tableside Ordering / BYOD</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/tableside-ordering.png" alt="">Tableside
+                                            Ordering / BYOD</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/advanced-reports.png" alt="">Advanced Reports</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/advanced-reports.png" alt="">Advanced
+                                            Reports</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/aggregator.png" alt="">Aggregator Integration</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/aggregator.png" alt="">Aggregator
+                                            Integration</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/coupons-discounts.png" alt="">Coupons & Discounts</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/coupons-discounts.png" alt="">Coupons &
+                                            Discounts</a>
                                     </li>
                                     <li class="">
                                         <a href="#"
-                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3" ><img src="./assets/images/products/email-sms.png" alt="">Email & SMS Marketing</a>
+                                            class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                                src="./assets/images/products/email-sms.png" alt="">Email & SMS
+                                            Marketing</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Pricing</a>
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Pricing</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Solutions</a>
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Solutions</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Partners</a>
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Partners</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Resources</a>
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Resources</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Company</a>
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Company</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Contact
+                            <a href="#"
+                                class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Contact
                                 Us</a>
                         </li>
 
@@ -183,359 +228,398 @@
             </div>
         </nav>
     </header>
-    <main class="max-w-screen-2xl md:px-24 px-4 max-sm:pt-10"
+
+    <main class="max-w-screen-2xl "
         style="background: linear-gradient(136.79deg, rgba(210, 67, 33, 0.25) 14.12%, rgba(210, 67, 33, 0.2) 23.53%, rgba(210, 67, 33, 0.15) 32.29%, rgba(210, 67, 33, 0.125) 40.85%, rgba(210, 67, 33, 0.075) 47.69%, rgba(210, 67, 33, 0.04) 56.89%);">
 
-        <div class="grid md:grid-cols-2">
-            <div class="col-span-1 flex flex-col justify-center">
+        <div class="grid md:grid-cols-6 py-5 md:ps-24 ">
+            <div class="col-span-3 flex flex-col justify-center max-sm:px-4">
                 <p class="text-[#D24321] text-lg font-semibold">Tired of working with too many providers for your
                     digital needs?</p>
-                <h1 class="md:text-5xl text-3xl">Elevate your restaurant experience with our <br> All-in-One <span
-                        class="font-bold">POS</span> Platform</h1>
-                <p class="mt-4">Streamline operations and enhance customer satisfaction with our all-in-one digital
+                <h1 class="text-5xl max-sm:text-3xl leading-[57px] font-medium">Elevate your restaurant experience with
+                    our <br> All-in-One <span class="font-bold">POS</span> Platform</h1>
+                <p class="mt-4 leading-7 text-justify">Streamline operations and enhance customer satisfaction with our
+                    all-in-one digital
                     solutions. From POS and Kiosks to Mobile Apps and Digital Menu Boards, OrderSune offers everything
                     you
                     need to boost efficiency and engagement. Simplify your digital needs and drive growth effortlessly.
                 </p>
             </div>
-            <div class="col-span-1">
-                <img src="./assets/picture1.png" alt="" class="w-full">
+            <div class="col-span-3 relative">
+                <div class="md:p-16 max-sm:px-16 max-sm:pt-10">
+                    <img src="./assets/images/home/video.png" alt="">
+                </div>
+                <img src="./assets/images/home/banner-bg.png" alt="" class="absolute top-0">
             </div>
         </div>
-
-        <div class="flex justify-center space-x-4 md:space-x-10 my-14">
-            <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
+        <main class="md:px-24 px-4 max-sm:pt-10">
+            <section class="max-sm:space-y-10">
+            <div class="flex justify-center space-x-4 md:space-x-10 mb-14">
+                <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
 ">Get a Free
-                Demo</button>
-            <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
+                    Demo</button>
+                <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
 ">Start a Free
-                Trial</button>
-        </div>
+                    Trial</button>
+            </div>
 
-        <div class="">
-            <h2 class="text-3xl font-bold">Effortlessly sell anywhere, anytime with ordersune</h2>
-            <p class="mt-2">A fast and user-friendly restaurant POS software that effortlessly handles high order
-                volumes.
-            </p>
-            <div class="grid md:grid-cols-6 md:gap-16 mt-10">
-                <div class=" col-span-4 md:col-span-2 mx-10 md:mx-0">
-                    <img src="./assets/picture2.png" alt="" class="md:w-full">
-                </div>
-                <div class="col-span-4 md:mt-8">
-                    <p class="md:text-3xl md:leading-[52px] text-justify">Optimize your restaurant workflow with OrderSune,
-                        the <span class="text-[#B33632] font-semibold">all-in-one POS</span> that streamlines operations
-                        across all platforms, simplifying management and letting you <span class="text-green-600">focus
-                            on your
-                            customers</span></p>
+            <div class="">
+                <h2 class="text-3xl font-bold">Effortlessly sell anywhere, anytime with ordersune</h2>
+                <p class="mt-2">A fast and user-friendly restaurant POS software that effortlessly handles high order
+                    volumes.
+                </p>
+                <div class="grid md:grid-cols-6 md:gap-16 mt-10">
+                    <div class=" md:col-span-2 col-span-3 md:mx-0 col-start-2">
+                        <img src="./assets/picture2.png" alt="" class="md:w-full">
+                    </div>
+                    <div class="md:col-span-4 col-span-5 md:mt-8">
+                        <p class="md:text-3xl md:leading-[52px] text-justify">Optimize your restaurant workflow with
+                            OrderSune,
+                            the <span class="text-[#B33632] font-semibold">all-in-one POS</span> that streamlines
+                            operations
+                            across all platforms, simplifying management and letting you <span
+                                class="text-[#49B447] font-medium">focus
+                                on your
+                                customers</span></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="grid md:grid-cols-6 md:gap-16">
-            <div class="col-span-4 flex flex-col justify-center">
-                <p class="md:text-3xl md:leading-[52px] text-justify"><span class="text-blue-900">Drive sales growth</span>
-                    <img src="./assets/graph.png" alt="" class="w-8 inline"> and boost <span
-                        class="text-blue-900">profitability</span> with
-                    OrderSune, leveraging integrated tools and analytics designed to optimize operations and enhance
-                    customer engagement.</p>
-            </div>
-            <div class="col-span-2 max-sm:order-first">
-                <img src="./assets/picture3.png" alt="" class="w-full">
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-6 md:gap-16 my-20">
-            <div class="col-span-2">
-                <img src="./assets/picture4.png" alt="" class="w-full">
-            </div>
-            <div class="col-span-4 flex flex-col justify-center">
-                <p class="md:text-3xl md:leading-[52px] text-justify"><span class="text-blue-500">Enhance customer
-                        experience</span> with OrderSune's <span class="text-orange-600">tailor-made</span> software,
-                    designed to meet the unique needs of your
-                    restaurant, ensuring seamless service and personalized interactions.</p>
-            </div>
-        </div>
-
-        <div class="">
-            <h2 class="md:text-2xl font-bold">Product Highlights</h2>
-            <p class="mt-2 md:text-lg text-justify">OrderSune is the all-in-one POS (Point of Sale) platform designed to
-                enhance your
-                operations.
-                Our suite of solutions includes a cutting-edge Kitchen Display System (KDS), Bring Your Own Device
-                (BYOD)
-                capability, self-service kiosks, and dynamic digital menu boards. Optimize order management with
-                real-time
-                tracking and efficient payment processing, while engaging customers through social media ordering and
-                loyalty programs. Streamline inventory management and aggregator integrations, and leverage AI-powered
-                product recommendations for increased sales. Simplify online ordering, reservations, and QR code
-                ordering.
-                OrderSune is the future of POS solutions—boost your efficiency, customer satisfaction, and profitability
-                today.</p>
-        </div>
-
-        <div class="relative bg-[#fde3d3] mt-60 rounded-[40px] text-center">
-            <div
-                class="absolute top-[-13rem] left-1/2 transform -translate-x-1/2 w-64 h-64 bg-[#fde3d3] rounded-full flex flex-col pt-4 items-center">
-                <img src="./assets/all-in-one.png" alt="POS Icon" class="w-24">
-                <strong class="text-[#D24322] text-3xl uppercase">All-in-one<br>Point of Sale</strong>
-            </div>
-            <div class="grid md:grid-cols-5 gap-10 justify-center relative p-8">
-                <div class=" flex flex-col justify-around">
-                    <img src="./assets/kitchen-display.png" alt="Kitchen Display Systems" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Kitchen Display <br> Systems</h2>
-                    <p class="text-xs leading-5">Improves kitchen efficiency by digitally displaying orders for easy tracking and
-                        preparation.</p>
-                </div>
-                <div class=" flex flex-col justify-around">
-                    <img src="./assets/digital-menu.png" alt="Digital Menu Boards" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Digital <br> Menu Boards</h2>
-                    <p class="text-xs leading-5">Displays dynamic menus and promotions, enhancing visual appeal and upselling
-                        opportunities.</p>
-                </div>
-                <div class=" flex flex-col justify-around">
-                    <img src="./assets/self-ordering.png" alt="Self Ordering" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">KIOSK <br> SELF ORDERING</h2>
-                    <p class="text-xs leading-5">Empowers customers to place orders themselves, reducing wait times and labor
-                        costs.</p>
-                </div>
-                <div class=" flex flex-col justify-around">
-                    <img src="./assets/order-tracking.png" alt="Order Tracking" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Order Tracking</h2>
-                    <p class="text-xs leading-5">Allows real-time monitoring of order status, enhancing transparency and customer
-                        satisfaction.
+            <div class="grid md:grid-cols-6 md:gap-16">
+                <div class="md:col-span-4 col-span-5 flex flex-col justify-center">
+                    <p class="md:text-3xl md:leading-[52px] text-justify"><span class="text-[#002959] font-medium">Drive
+                            sales growth</span>
+                        <img src="./assets/graph.png" alt="" class="w-8 inline"> and <span
+                            class="font-semibold">boost</span> <span
+                            class="text-[#002959] font-medium">profitability</span> with
+                        OrderSune, leveraging integrated tools and analytics designed to optimize operations and enhance
+                        customer engagement.
                     </p>
                 </div>
-
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/ecommerce-icon.png" alt="E-commerce" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">E-commerce</h2>
-                    <p class="text-xs leading-5">Enables online ordering, expanding sales channels and customer reach.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/call-center.png" alt="Call Center Ordering" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Call Center <br> Ordering</h2>
-                    <p class="text-xs leading-5">Manages phone orders seamlessly, integrating them with other sales channels.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/social-media.png" alt="Social Media Ordering" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Social Media <br> Ordering</h2>
-                    <p class="text-xs leading-5">Captures orders from social media platforms, increasing convenience for customers.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/reservations.png" alt="Reservations" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Reservations</h2>
-                    <p class="text-xs leading-5">Simplifies table booking, reducing no-shows and optimizing seating arrangements.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/loyalty-program.png" alt="Loyalty Program" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Loyalty <br> Program</h2>
-                    <p class="text-xs leading-5">Rewards repeat customers, boosting retention and sales.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/payments-processing.png" alt="Payments Processing" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Payments <br> Processing</h2>
-                    <p class="text-xs leading-5">Facilitates secure and diverse payment options, improving transaction speed and customer satisfaction.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/inventory-management.png" alt="Inventory Management" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Inventory <br> Management</h2>
-                    <p class="text-xs leading-5">Tracks stock levels accurately, preventing shortages and reducing waste.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/product-recommendations.png" alt="Product Recommendations" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Product Recommendations</h2>
-                    <p class="text-xs leading-5">Suggests items to customers based on their preferences, increasing average order value.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/table-side-ordering.png" alt="Table Side Ordering" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Table Side <br> Ordering</h2>
-                    <p class="text-xs leading-5">Allows customers to order from their own devices, enhancing convenience and reducing wait times.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/advanced-analytics.png" alt="Advanced Analytics" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Advanced <br> Analytics</h2>
-                    <p class="text-xs leading-5">Provides detailed analytics on sales and operations, supporting informed decision-making.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/advanced-analytics.png" alt="Aggregator Integrations" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Aggregator <br> Integrations</h2>
-                    <p class="text-xs leading-5">Connects with delivery platforms, streamlining order management and expanding reach.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/coupons-discounts.png" alt="Coupons & Discounts" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Coupons & <br> Discounts</h2>
-                    <p class="text-xs leading-5">Manages promotions effectively, attracting new customers and retaining existing ones.</p>
-                </div>
-                <div class="flex flex-col justify-around">
-                    <img src="./assets/email-sms-marketing.png" alt="Email & SMS Marketing" class="w-24 mx-auto">
-                    <h2 class="text-xl uppercase font-semibold mt-2">Email & SMS <br> Marketing</h2>
-                    <p class="text-xs leading-5">Engages customers with targeted campaigns, driving repeat business and promotions.</p>
+                <div class="md:col-span-2 col-span-3 col-start-2 max-sm:order-first">
+                    <img src="./assets/picture3.png" alt="" class="w-full">
                 </div>
             </div>
-        </div>
 
-        <div class="">
-            <h3 class="md:text-3xl text-lg font-semibold mt-10 mb-8">The Impact of Our Achievements in Numbers</h3>
-            <div class="achievements-container grid md:grid-cols-8 gap-4">
-                <div class="col-span-3">
-                    <img src="./assets/Achievements.png" alt="" class="w-full max-w-md">
+            <div class="grid md:grid-cols-6 md:gap-16 md:my-20">
+                <div class="col-start-2 md:col-span-2 col-span-3">
+                    <img src="./assets/picture4.png" alt="" class="w-full">
                 </div>
-                <div class="achievements-section col-span-5 flex flex-col justify-between">
-                    <div class="achievements-content md:text-xl text-justify">
-                        Discover how OrderSune is transforming businesses with our impressive
+                <div class="md:col-span-4 col-span-5 flex flex-col justify-center">
+                    <p class="md:text-3xl md:leading-[52px] text-justify"><span
+                            class="text-[#007FFF] font-medium">Enhance customer
+                            experience</span> with OrderSune's <span
+                            class="text-[#D14420] font-medium">tailor-made</span> software,
+                        designed to meet the unique needs of your
+                        restaurant, ensuring seamless service and personalized interactions.</p>
+                </div>
+            </div>
+
+            <div class="md:my-20">
+                <h2 class="md:text-2xl font-bold">Product Highlights</h2>
+                <p class="mt-2 md:text-lg text-sm text-justify">OrderSune is the all-in-one POS (Point of Sale) platform
+                    designed to
+                    enhance your
+                    operations.
+                    Our suite of solutions includes a cutting-edge Kitchen Display System (KDS), Bring Your Own Device
+                    (BYOD)
+                    capability, self-service kiosks, and dynamic digital menu boards. Optimize order management with
+                    real-time
+                    tracking and efficient payment processing, while engaging customers through social media ordering
+                    and
+                    loyalty programs. Streamline inventory management and aggregator integrations, and leverage
+                    AI-powered
+                    product recommendations for increased sales. Simplify online ordering, reservations, and QR code
+                    ordering.
+                    OrderSune is the future of POS solutions—boost your efficiency, customer satisfaction, and
+                    profitability
+                    today.</p>
+            </div>
+        </section>
+            <div class="relative bg-[#fde3d3] mt-60 rounded-[40px] text-center">
+                <div
+                    class="absolute top-[-13rem] left-1/2 transform -translate-x-1/2 w-64 h-64 bg-[#fde3d3] rounded-full flex flex-col pt-4 items-center">
+                    <img src="./assets/all-in-one.png" alt="POS Icon" class="w-24">
+                    <strong class="text-[#D24322] text-3xl uppercase">All-in-one<br>Point of Sale</strong>
+                </div>
+                <div
+                    class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 justify-center relative p-8">
+                    <div class=" flex flex-col justify-around">
+                        <img src="./assets/kitchen-display.png" alt="Kitchen Display Systems" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Kitchen Display <br> Systems</h2>
+                        <p class="text-xs leading-5">Improves kitchen efficiency by digitally displaying orders for easy
+                            tracking and
+                            preparation.</p>
+                    </div>
+                    <div class=" flex flex-col justify-around">
+                        <img src="./assets/digital-menu.png" alt="Digital Menu Boards" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Digital <br> Menu Boards</h2>
+                        <p class="text-xs leading-5">Displays dynamic menus and promotions, enhancing visual appeal and
+                            upselling
+                            opportunities.</p>
+                    </div>
+                    <div class=" flex flex-col justify-around">
+                        <img src="./assets/self-ordering.png" alt="Self Ordering" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">KIOSK <br> SELF ORDERING</h2>
+                        <p class="text-xs leading-5">Empowers customers to place orders themselves, reducing wait times
+                            and labor
+                            costs.</p>
+                    </div>
+                    <div class=" flex flex-col justify-around">
+                        <img src="./assets/order-tracking.png" alt="Order Tracking" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Order Tracking</h2>
+                        <p class="text-xs leading-5">Allows real-time monitoring of order status, enhancing transparency
+                            and customer
+                            satisfaction.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/ecommerce-icon.png" alt="E-commerce" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">E-commerce</h2>
+                        <p class="text-xs leading-5">Enables online ordering, expanding sales channels and customer
+                            reach.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/call-center.png" alt="Call Center Ordering" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Call Center <br> Ordering</h2>
+                        <p class="text-xs leading-5">Manages phone orders seamlessly, integrating them with other sales
+                            channels.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/social-media.png" alt="Social Media Ordering" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Social Media <br> Ordering</h2>
+                        <p class="text-xs leading-5">Captures orders from social media platforms, increasing convenience
+                            for customers.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/reservations.png" alt="Reservations" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Reservations</h2>
+                        <p class="text-xs leading-5">Simplifies table booking, reducing no-shows and optimizing seating
+                            arrangements.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/loyalty-program.png" alt="Loyalty Program" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Loyalty <br> Program</h2>
+                        <p class="text-xs leading-5">Rewards repeat customers, boosting retention and sales.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/payments-processing.png" alt="Payments Processing" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Payments <br> Processing</h2>
+                        <p class="text-xs leading-5">Facilitates secure and diverse payment options, improving
+                            transaction speed and customer satisfaction.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/inventory-management.png" alt="Inventory Management" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Inventory <br> Management</h2>
+                        <p class="text-xs leading-5">Tracks stock levels accurately, preventing shortages and reducing
+                            waste.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/product-recommendations.png" alt="Product Recommendations"
+                            class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Product Recommendations</h2>
+                        <p class="text-xs leading-5">Suggests items to customers based on their preferences, increasing
+                            average order value.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/table-side-ordering.png" alt="Table Side Ordering" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Table Side <br> Ordering</h2>
+                        <p class="text-xs leading-5">Allows customers to order from their own devices, enhancing
+                            convenience and reducing wait times.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/advanced-analytics.png" alt="Advanced Analytics" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Advanced <br> Analytics</h2>
+                        <p class="text-xs leading-5">Provides detailed analytics on sales and operations, supporting
+                            informed decision-making.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/advanced-analytics.png" alt="Aggregator Integrations" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Aggregator <br> Integrations</h2>
+                        <p class="text-xs leading-5">Connects with delivery platforms, streamlining order management and
+                            expanding reach.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/coupons-discounts.png" alt="Coupons & Discounts" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Coupons & <br> Discounts</h2>
+                        <p class="text-xs leading-5">Manages promotions effectively, attracting new customers and
+                            retaining existing ones.</p>
+                    </div>
+                    <div class="flex flex-col justify-around">
+                        <img src="./assets/email-sms-marketing.png" alt="Email & SMS Marketing" class="w-24 mx-auto">
+                        <h2 class="text-xl uppercase font-semibold mt-2">Email & SMS <br> Marketing</h2>
+                        <p class="text-xs leading-5">Engages customers with targeted campaigns, driving repeat business
+                            and promotions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h3 class="md:text-3xl text-lg font-semibold mt-10 mb-8">The Impact of Our Achievements in Numbers</h3>
+                <div class="achievements-container grid md:grid-cols-8 gap-4">
+                    <div class="col-span-3">
+                        <img src="./assets/Achievements.png" alt="" class="w-full max-w-md">
+                    </div>
+                    <div class="achievements-section col-span-5 flex flex-col justify-between">
+                        <div class="achievements-content md:text-xl text-justify">
+                            Discover how OrderSune is transforming businesses with our impressive
                             performance
                             numbers and proven results. Explore the key metrics that highlight our impact and
                             success.
+                        </div>
+                        <div class="stats grid md:grid-cols-2 text-xl md:gap-y-16 gap-10 my-10">
+                            <div class="stat-item flex items-center">
+                                <img src="./assets/line.png" alt="line" class="h-[100px]">
+                                <div class="ps-4">
+                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">99.99%</span>
+                                        uptime</h2>
+                                    <p>zero outages</p>
+                                </div>
+                            </div>
+                            <div class="stat-item flex items-center">
+                                <img src="./assets/line.png" alt="line" class="h-[100px]">
+                                <div class="ps-4">
+                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">1M </span>
+                                        Plus</h2>
+                                    <p>Peak transactions per day</p>
+                                </div>
+                            </div>
+                            <div class="stat-item flex items-center">
+                                <img src="./assets/line.png" alt="line" class="h-[100px]">
+                                <div class="ps-4">
+                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">33K</span>
+                                        Plus</h2>
+                                    <p>Products with multi-level categories</p>
+                                </div>
+                            </div>
+                            <div class="stat-item flex items-center">
+                                <img src="./assets/line.png" alt="line" class="h-[100px]">
+                                <div class="ps-4">
+                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">50 </span>
+                                        Plus</h2>
+                                    <p>External System Integrations</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stats grid md:grid-cols-2 text-xl md:gap-y-16 gap-10 my-10">
-                        <div class="stat-item flex items-center">
-                            <img src="./assets/line.png" alt="line" class="h-[100px]">
-                            <div class="ps-4">
-                                <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">99.99%</span> uptime</h2>
-                                <p>zero outages</p>
-                            </div>
-                        </div>
-                        <div class="stat-item flex items-center">
-                            <img src="./assets/line.png" alt="line" class="h-[100px]">
-                            <div class="ps-4">
-                                <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">1M </span> Plus</h2>
-                                <p>Peak transactions per day</p>
-                            </div>
-                        </div>
-                        <div class="stat-item flex items-center">
-                            <img src="./assets/line.png" alt="line" class="h-[100px]">
-                            <div class="ps-4">
-                                <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">33K</span> Plus</h2>
-                                <p>Products with multi-level categories</p>
-                            </div>
-                        </div>
-                        <div class="stat-item flex items-center">
-                            <img src="./assets/line.png" alt="line" class="h-[100px]">
-                            <div class="ps-4">
-                                <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">50 </span> Plus</h2>
-                                <p>External System Integrations</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h2 class="md:text-3xl text-xl font-bold mt-10 mb-8">A POS that works for any restaurant</h2>
+                <div
+                    class="grid xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 flex-wrap justify-center mt-4 text-center text-white font-semibold text-xl pos gap-y-6">
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/food-beverage.png" alt="Food & Beverage" class="mx-auto mb-2">
+                        <p>Food & Beverage</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/qsr-chains.png" alt="QSR Chains" class="mx-auto mb-2">
+                        <p>QSR Chains</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/counter-service.png" alt="Counter Service" class="mx-auto mb-2">
+                        <p>Counter Service</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/full-service.png" alt="Full Service Restaurants" class="mx-auto mb-2">
+                        <p>Full Service Restaurants</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/food-trucks.png" alt="Food Trucks" class="mx-auto mb-2">
+                        <p>Food Trucks</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/cafes-coffee.png" alt="Cafes & Coffee Shops" class="mx-auto mb-2">
+                        <p>Cafes & Coffee Shops</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/ice-cream.png" alt="Ice Cream & Dessert Shops" class="mx-auto mb-2">
+                        <p>Ice Cream & Dessert Shops</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/concession-stands.png" alt="Concession Stands" class="mx-auto mb-2">
+                        <p>Concession Stands</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/juice-smoothy.png" alt="Juice & Smoothy Bars" class="mx-auto mb-2"
+                            style="height: 90px;">
+                        <p>Juice & Smoothy Bars</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/bakeries.png" alt="Bakeries" class="mx-auto mb-2">
+                        <p>Bakeries</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/snack-bars.png" alt="Snack Bars" class="mx-auto mb-2">
+                        <p>Snack Bars</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/pop-up.png" alt="Pop up restaurants & events" class="mx-auto mb-2">
+                        <p>Pop up restaurants & events</p>
+                    </div>
+                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/bars-pubs.png" alt="Bars & pubs" class="mx-auto mb-2">
+                        <p>Bars & pubs</p>
+                    </div>
+                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
+                        <img src="./assets/pos/canteens.png" alt="Canteens or Cafeterias" class="mx-auto mb-2">
+                        <p>Canteens or Cafeterias</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="">
-            <h2 class="md:text-3xl text-xl font-bold mt-10 mb-8">A POS that works for any restaurant</h2>
-            <div>
-                <img src="./assets/images/home/Business Types.png" alt="">
-            </div>
-            <div class="hidden flex-wrap justify-center mt-4">
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/food-beverage.png" alt="Food & Beverage" class="mx-auto mb-2">
-                    <p>Food & Beverage</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/qsr-chains.png" alt="QSR Chains" class="mx-auto mb-2">
-                    <p>QSR Chains</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/counter-service.png" alt="Counter Service" class="mx-auto mb-2">
-                    <p>Counter Service</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/full-service.png" alt="Full Service Restaurants" class="mx-auto mb-2">
-                    <p>Full Service Restaurants</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/food-trucks.png" alt="Food Trucks" class="mx-auto mb-2">
-                    <p>Food Trucks</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/cafes-coffee.png" alt="Cafes & Coffee Shops" class="mx-auto mb-2">
-                    <p>Cafes & Coffee Shops</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/ice-cream.png" alt="Ice Cream & Dessert Shops" class="mx-auto mb-2">
-                    <p>Ice Cream & Dessert Shops</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/concession-stands.png" alt="Concession Stands" class="mx-auto mb-2">
-                    <p>Concession Stands</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/juice-smoothy.png" alt="Juice & Smoothy Bars" class="mx-auto mb-2"
-                        style="height: 90px;">
-                    <p>Juice & Smoothy Bars</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/bakeries.png" alt="Bakeries" class="mx-auto mb-2">
-                    <p>Bakeries</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/snack-bars.png" alt="Snack Bars" class="mx-auto mb-2">
-                    <p>Snack Bars</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/pop-up.png" alt="Pop up restaurants & events" class="mx-auto mb-2">
-                    <p>Pop up restaurants & events</p>
-                </div>
-                <div class="pos1 w-1/4 p-4">
-                    <img src="./assets/bars-pubs.png" alt="Bars & pubs" class="mx-auto mb-2">
-                    <p>Bars & pubs</p>
-                </div>
-                <div class="pos2 w-1/4 p-4">
-                    <img src="./assets/canteens.png" alt="Canteens or Cafeterias" class="mx-auto mb-2">
-                    <p>Canteens or Cafeterias</p>
+            <div class="bg-[#F2732299] md:p-10 py-10 px-3 my-20">
+                <div class="contact-form grid lg:grid-cols-2 md:gap-16 gap-8">
+                    <div class="demo-form bg-white rounded-xl p-5">
+                        <form action="">
+                            <big><big><span>Schedule a free demo</span></big></big>
+                            <div class="name flex flex-wrap">
+                                <div class="w-full md:w-1/2 p-2">
+                                    <label for="" class="block">Name*</label>
+                                    <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                                </div>
+                                <div class="w-full md:w-1/2 p-2">
+                                    <label for="" class="block">Restaurant Name*</label>
+                                    <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <label for="" class="block">Email address*</label>
+                                <input type="email" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
+                            </div>
+                            <div class="p-2">
+                                <label for="" class="block">Phone number*</label>
+                                <input type="number" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
+                            </div>
+                            <div class="name flex flex-wrap">
+                                <div class="w-full md:w-1/2 p-2">
+                                    <label for="" class="block">City</label>
+                                    <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                                </div>
+                                <div class="w-full md:w-1/2 p-2">
+                                    <label for="" class="block">Country</label>
+                                    <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <input type="checkbox" name="" id="" class="mr-2">
+                                <p class="inline">By submitting this form, you acknowledge that your information will be
+                                    processed according to ordersune’s privacy statement.</p>
+                            </div>
+                            <div class="submit-button p-2 text-center">
+                                <input type="submit" name="" id="" value="submit"
+                                    class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-2 px-6 rounded-full cursor-pointer">
+                            </div>
+                        </form>
+                    </div>
+                    <div class=" flex justify-center">
+                        <img src="./assets/picture5.png" alt="" class="w-full max-w-md">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="bg-[#F2732299] md:p-10 py-10 px-3 my-20">
-            <div class="contact-form grid md:grid-cols-2 md:gap-16 gap-8">
-                <div class="demo-form bg-white rounded-xl p-5">
-                    <form action="">
-                        <big><big><span>Schedule a free demo</span></big></big>
-                        <div class="name flex flex-wrap">
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Name*</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
-                            </div>
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Restaurant Name*</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <label for="" class="block">Email address*</label>
-                            <input type="email" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
-                        </div>
-                        <div class="p-2">
-                            <label for="" class="block">Phone number*</label>
-                            <input type="number" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
-                        </div>
-                        <div class="name flex flex-wrap">
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">City</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
-                            </div>
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Country</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <input type="checkbox" name="" id="" class="mr-2">
-                            <p class="inline">By submitting this form, you acknowledge that your information will be
-                                processed according to ordersune’s privacy statement.</p>
-                        </div>
-                        <div class="submit-button p-2 text-center">
-                            <input type="submit" name="" id="" value="submit"
-                                class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-2 px-6 rounded-full cursor-pointer">
-                        </div>
-                    </form>
-                </div>
-                <div class=" flex justify-center">
-                    <img src="./assets/picture5.png" alt="" class="w-full max-w-md">
-                </div>
-            </div>
-        </div>
+        </main>
     </main>
     <footer class="bg-black text-white md:p-10 py-10">
         <img src="./assets/footerlogo.png" alt="Footer Logo" class="md:mx-12 mx-4">
@@ -637,10 +721,13 @@
             <div class="col-span-4">
                 <h3 class="text-xl font-bold">Talk to an expert</h3>
                 <form class="flex flex-col">
-                    <input type="email" placeholder="your email address" class="bg-black text-white p-3 my-2 border-2 border-white rounded-lg text-center">
+                    <input type="email" placeholder="your email address"
+                        class="bg-black text-white p-3 my-2 border-2 border-white rounded-lg text-center">
                     <p class="text-center">or</p>
-                    <input type="text" placeholder="your phone number" class="bg-black text-white p-3 my-2 border-2 border-white rounded-lg text-center">
-                    <button type="submit" class="bg-green-500 text-white py-2 my-2 rounded-lg cursor-pointer">Let's Connect</button>
+                    <input type="text" placeholder="your phone number"
+                        class="bg-black text-white p-3 my-2 border-2 border-white rounded-lg text-center">
+                    <button type="submit" class="bg-green-500 text-white py-2 my-2 rounded-lg cursor-pointer">Let's
+                        Connect</button>
                 </form>
             </div>
         </div><br><br>
@@ -653,8 +740,11 @@
                 <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
             </div>
             <p class="text-lg font-bold">&copy; 2024 OrderSune LLC</p>
-            <p>All rights reserved. OrderSune name and its logo are registered trademarks of OrderSune Company. Unauthorized use is prohibited.</p><br>
-            <p>OrderSune specializes in providing advanced POS solutions for Quick Service Restaurants (QSR) and the Food & Beverage (F&B) industry. Our innovative technology ensures efficient services, streamlined operations, and enhanced customer experiences.</p>
+            <p>All rights reserved. OrderSune name and its logo are registered trademarks of OrderSune Company.
+                Unauthorized use is prohibited.</p><br>
+            <p>OrderSune specializes in providing advanced POS solutions for Quick Service Restaurants (QSR) and the
+                Food & Beverage (F&B) industry. Our innovative technology ensures efficient services, streamlined
+                operations, and enhanced customer experiences.</p>
             <div class="flex justify-center items-center mt-4">
                 <img src="./assets/usa.png" alt="Flags" class="mr-2">
                 <span>US (EN)</span>
