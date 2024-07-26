@@ -366,3 +366,44 @@
         .contact-form img {
             width: 50%;
         }
+        .products{
+            background-color: #DC694B;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon{
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background-color: white;
+            margin: 0 12px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .icon img{
+            z-index: 1;
+            position: relative;
+        }
+        .icon-container {
+            position: relative;
+            margin: 0 20px;
+            text-align: center;
+        }
+        .label {
+            width: 100px;
+            height: 20px;
+            position: absolute;
+            bottom: 0px;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 6px 15px;
+            border-radius: 7px;
+        }
+        
