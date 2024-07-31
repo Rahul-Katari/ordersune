@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,353 +14,464 @@
         .card {
             transition: transform 0.2s ease, clip-path 0.4s ease;
         }
+
         .card:hover {
             transform: scale(1.05);
         }
     </style>
 </head>
+
 <body class="bg-white p-8">
     <div class="container mx-auto">
+        <section>
+            <h2 class="text-center text-3xl font-bold mb-5">Why Choose OrderSune POS? </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud-Based and Offline Functionality Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-[#d3441ecc]  custom-shape group">
+                    <h2 class="text-xl font-bold mb-4">Cloud-Based and Offline Functionality</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Never worry about internet outages disrupting your service. Our POS system operates efficiently
+                        both
+                        online and offline, ensuring continuous operation and data synchronization as soon as the
+                        connection
+                        is restored.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                        </svg>
+                    </div>
+                </div>
 
-        <h2 class="text-center text-3xl font-bold mb-5">Why Choose OrderSune POS?        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Cloud-Based and Offline Functionality Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-[#d3441ecc]  custom-shape group">
-                <h2 class="text-xl font-bold mb-4">Cloud-Based and Offline Functionality</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Never worry about internet outages disrupting your service. Our POS system operates efficiently both online and offline, ensuring continuous operation and data synchronization as soon as the connection is restored.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-                    </svg>
+                <!-- Flexible Hardware Options Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <div
+                        class="absolute inset-0 bg-orange-500 rounded-full transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0">
+                    </div>
+                    <!-- Background SVG -->
+                    <div class="absolute top-0 right-0 w-full h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)" />
+                        </svg>
+                    </div>
+                    <!-- Content -->
+                    <h2 class="text-xl font-bold mb-4 relative z-10">Flexible Hardware Options</h2>
+                    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
+                    <p class="text-sm mb-8 flex-grow relative z-10">
+                        Whether you need a full hardware setup or prefer using your own devices, OrderSune’s POS
+                        software
+                        integrates effortlessly, offering flexibility to suit your business needs.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <!-- Recipe Configuration and Management Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <h2 class="text-xl font-bold mb-4">Recipe Configuration and Management</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Reduce training time and minimize mistakes with our recipe management feature. Easily configure
+                        and
+                        manage recipes, ensuring consistency in food preparation and enhancing overall quality.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Integrated Training Videos Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <div class="absolute top-0 right-0 w-full h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold mb-4 relative z-10">Integrated Training Videos</h2>
+                    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
+                    <p class="text-sm mb-8 flex-grow relative z-10">
+                        Simplify staff training with integrated training videos. Ensure all important aspects of your
+                        business are accessible in one place, making it easier for store users to process transactions
+                        and
+                        perform their duties effectively.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M12 20l9-7-9-7-9 7 9 7z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Scalable Backend Admin Dashboard Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <h2 class="text-xl font-bold mb-4">Scalable Backend Admin Dashboard</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Manage your business efficiently with our scalable backend admin dashboard. Monitor sales,
+                        manage
+                        inventory, and analyze performance metrics with ease, all in one place.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M4 4v16h16V4H4zm2 2h12v12H6V6zm1 2v8h10V8H7z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Dynamic Pricing Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <div class="absolute top-0 right-0 w-full h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold mb-4 relative z-10">Dynamic Pricing</h2>
+                    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
+                    <p class="text-sm mb-8 flex-grow relative z-10">
+                        Maximize revenue and adapt to market changes with dynamic pricing features. Adjust prices based
+                        on
+                        various factors and conditions to optimize sales and profitability.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M13 16h-1v-4h1m2 4h-1v-6h1m2 4h-1v-2h1m-8 4H8v-4h1m4 0H8v4h1m4 0H8v-4h1m0 2h1v-4h-1v4z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Multi-Channel Management Card -->
+                <div
+                    class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
+                    <h2 class="text-xl font-bold mb-4">Multi-Channel Management</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Streamline operations across multiple channels with our multi-channel management feature.
+                        Centralize
+                        your sales and inventory, and manage orders from various platforms seamlessly.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M3 4h18v16H3V4zm2 2v12h14V6H5zm7 3v6h2v-6h-2z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Sales and Inventory Management Card -->
+                <div class="bg-orange-500 custom-shape p-6 flex flex-col text-white relative overflow-hidden card">
+                    <div class="absolute top-0 right-0 w-full h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold mb-4 relative z-10">Sales and Inventory Management</h2>
+                    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
+                    <p class="text-sm mb-8 flex-grow relative z-10">
+                        Keep track of your sales and inventory effortlessly with our management tools. Monitor stock
+                        levels,
+                        track sales trends, and generate reports to make informed business decisions.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M3 12h18m-9 0v9m-6-9h12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Customer Relationship Management Card -->
+                <div class="bg-gray-100 rounded-3xl p-6 flex flex-col card">
+                    <h2 class="text-xl font-bold mb-4">Customer Relationship Management</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Enhance customer satisfaction and loyalty with our CRM tools. Manage customer interactions,
+                        track
+                        preferences, and offer personalized service to build lasting relationships.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Secure Payment Processing Card -->
+                <div class="bg-orange-500 custom-shape p-6 flex flex-col text-white relative overflow-hidden card">
+                    <div class="absolute top-0 right-0 w-full h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold mb-4 relative z-10">Secure Payment Processing</h2>
+                    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
+                    <p class="text-sm mb-8 flex-grow relative z-10">
+                        Ensure safe and seamless transactions with our secure payment processing system. Integrate with
+                        various payment methods and protect your customers' data with industry-leading security
+                        measures.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M3 4h18v16H3V4zm2 2v12h14V6H5zm7 3v6h2v-6h-2z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Tax Configuration and Product Tagging Card -->
+                <div class="bg-gray-100 rounded-3xl p-6 flex flex-col card">
+                    <h2 class="text-xl font-bold mb-4">Tax Configuration and Product Tagging</h2>
+                    <p class="text-gray-600 text-sm mb-8 flex-grow">
+                        Simplify tax management and product tagging with our integrated tools. Configure tax rates based
+                        on
+                        regions and categorize products for efficient tracking and reporting.
+                    </p>
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M4 4v16h16V4H4zm2 2h12v12H6V6zm1 2v8h10V8H7z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold text-center mb-12">Benefits to Your Business</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Increased Efficiency</h2>
+                        <p class="text-gray-600">Streamline your operations, reduce manual processes, and allow your
+                            staff to focus on delivering excellent customer service.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7h8M8 11h8m-8 4h8" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Enhanced Customer Experience</h2>
+                        <p class="text-gray-600">Fast, accurate order processing and personalized service to increase
+                            customer satisfaction and loyalty.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7l9 9 9-9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Scalability</h2>
+                        <p class="text-gray-600">Easily scale your POS system as your business grows, accommodating new
+                            locations and higher transaction volumes effortlessly.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 10h16m-7 4h7M5 14h3" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Data-Driven Decisions</h2>
+                        <p class="text-gray-600">Leverage real-time data and analytics to make informed decisions that
+                            drive business growth.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Reduced Training Time</h2>
+                        <p class="text-gray-600">Integrated recipe management and training videos help reduce training
+                            time and costs, ensuring your staff is well-prepared and efficient.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7l9 9 9-9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Operational Flexibility</h2>
+                        <p class="text-gray-600">Manage taxes and product tags effortlessly, allowing for easy
+                            adaptation to different menu types and efficient product filtering at all levels.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-orange-500 text-5xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Seamless Integration</h2>
+                        <p class="text-gray-600">OrderSune’s POS system is a flexible, reliable, and user-friendly
+                            solution that adapts to the unique needs of your restaurant. Simplify your operations,
+                            enhance customer satisfaction, and boost your profitability with our all-in-one platform.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-<!-- Flexible Hardware Options Card -->
-<div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-    <div class="absolute inset-0 bg-orange-500 rounded-full transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
-    <!-- Background SVG -->
-    <div class="absolute top-0 right-0 w-full h-full">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)"/>
-        </svg>
+        <section>
+            <div class="container mx-auto">
+                <h1 class="text-3xl font-bold text-center mb-5">Benefits to Your Business</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Increased Efficiency</h2>
+                        <p class="">Streamline your operations, reduce manual processes, and allow your staff to focus
+                            on delivering excellent customer service.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7h8M8 11h8m-8 4h8" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Enhanced Customer Experience</h2>
+                        <p class="text-gray-600">Fast, accurate order processing and personalized service to increase
+                            customer satisfaction and loyalty.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7l9 9 9-9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Scalability</h2>
+                        <p class="text-gray-600">Easily scale your POS system as your business grows, accommodating new
+                            locations and higher transaction volumes effortlessly.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Data-Driven Decisions</h2>
+                        <p class="text-gray-600">Leverage real-time data and analytics to make informed decisions that
+                            drive business growth.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Reduced Training Time</h2>
+                        <p class="text-gray-600">Integrated recipe management and training videos help reduce training
+                            time and costs, ensuring your staff is well-prepared and efficient.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7l9 9 9-9" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Operational Flexibility</h2>
+                        <p class="text-gray-600">Manage taxes and product tags effortlessly, allowing for easy
+                            adaptation to different menu types and efficient product filtering at all levels.</p>
+                    </div>
+
+                    <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
+                        <div class="text-orange-500 text-3xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Seamless Integration</h2>
+                        <p class="text-gray-600">OrderSune’s POS system is a flexible, reliable, and user-friendly
+                            solution that adapts to the unique needs of your restaurant. Simplify your operations,
+                            enhance customer satisfaction, and boost your profitability with our all-in-one platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <!-- Content -->
-    <h2 class="text-xl font-bold mb-4 relative z-10">Flexible Hardware Options</h2>
-    <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
-    <p class="text-sm mb-8 flex-grow relative z-10">
-        Whether you need a full hardware setup or prefer using your own devices, OrderSune’s POS software integrates effortlessly, offering flexibility to suit your business needs.
-    </p>
-    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-    </div>
-</div>
 
-
-            <!-- Recipe Configuration and Management Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-                <h2 class="text-xl font-bold mb-4">Recipe Configuration and Management</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Reduce training time and minimize mistakes with our recipe management feature. Easily configure and manage recipes, ensuring consistency in food preparation and enhancing overall quality.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Integrated Training Videos Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-                <div class="absolute top-0 right-0 w-full h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
-                </div>
-                <h2 class="text-xl font-bold mb-4 relative z-10">Integrated Training Videos</h2>
-                <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
-                <p class="text-sm mb-8 flex-grow relative z-10">
-                    Simplify staff training with integrated training videos. Ensure all important aspects of your business are accessible in one place, making it easier for store users to process transactions and perform their duties effectively.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 20l9-7-9-7-9 7 9 7z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Scalable Backend Admin Dashboard Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-                <h2 class="text-xl font-bold mb-4">Scalable Backend Admin Dashboard</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Manage your business efficiently with our scalable backend admin dashboard. Monitor sales, manage inventory, and analyze performance metrics with ease, all in one place.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16h16V4H4zm2 2h12v12H6V6zm1 2v8h10V8H7z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Dynamic Pricing Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-                <div class="absolute top-0 right-0 w-full h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
-                </div>
-                <h2 class="text-xl font-bold mb-4 relative z-10">Dynamic Pricing</h2>
-                <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
-                <p class="text-sm mb-8 flex-grow relative z-10">
-                    Maximize revenue and adapt to market changes with dynamic pricing features. Adjust prices based on various factors and conditions to optimize sales and profitability.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h1m2 4h-1v-6h1m2 4h-1v-2h1m-8 4H8v-4h1m4 0H8v4h1m4 0H8v-4h1m0 2h1v-4h-1v4z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Multi-Channel Management Card -->
-            <div class="relative overflow-hidden bg-gray-100 p-6 flex flex-col text-gray-900 hover:text-white hover:translate-x-0 hover:bg-orange-500  custom-shape group">
-                <h2 class="text-xl font-bold mb-4">Multi-Channel Management</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Streamline operations across multiple channels with our multi-channel management feature. Centralize your sales and inventory, and manage orders from various platforms seamlessly.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4h18v16H3V4zm2 2v12h14V6H5zm7 3v6h2v-6h-2z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Sales and Inventory Management Card -->
-            <div class="bg-orange-500 custom-shape p-6 flex flex-col text-white relative overflow-hidden card">
-                <div class="absolute top-0 right-0 w-full h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
-                </div>
-                <h2 class="text-xl font-bold mb-4 relative z-10">Sales and Inventory Management</h2>
-                <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
-                <p class="text-sm mb-8 flex-grow relative z-10">
-                    Keep track of your sales and inventory effortlessly with our management tools. Monitor stock levels, track sales trends, and generate reports to make informed business decisions.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12h18m-9 0v9m-6-9h12" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Customer Relationship Management Card -->
-            <div class="bg-gray-100 rounded-3xl p-6 flex flex-col card">
-                <h2 class="text-xl font-bold mb-4">Customer Relationship Management</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Enhance customer satisfaction and loyalty with our CRM tools. Manage customer interactions, track preferences, and offer personalized service to build lasting relationships.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Secure Payment Processing Card -->
-            <div class="bg-orange-500 custom-shape p-6 flex flex-col text-white relative overflow-hidden card">
-                <div class="absolute top-0 right-0 w-full h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0,0 L100,0 L100,100 Q50,90 0,100 Z" fill="rgba(255,255,255,0.1)"/>
-                    </svg>
-                </div>
-                <h2 class="text-xl font-bold mb-4 relative z-10">Secure Payment Processing</h2>
-                <div class="w-16 h-0.5 bg-white mb-4 relative z-10"></div>
-                <p class="text-sm mb-8 flex-grow relative z-10">
-                    Ensure safe and seamless transactions with our secure payment processing system. Integrate with various payment methods and protect your customers' data with industry-leading security measures.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4h18v16H3V4zm2 2v12h14V6H5zm7 3v6h2v-6h-2z" />
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Tax Configuration and Product Tagging Card -->
-            <div class="bg-gray-100 rounded-3xl p-6 flex flex-col card">
-                <h2 class="text-xl font-bold mb-4">Tax Configuration and Product Tagging</h2>
-                <p class="text-gray-600 text-sm mb-8 flex-grow">
-                    Simplify tax management and product tagging with our integrated tools. Configure tax rates based on regions and categorize products for efficient tracking and reporting.
-                </p>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16h16V4H4zm2 2h12v12H6V6zm1 2v8h10V8H7z" />
-                    </svg>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold text-center mb-12">Benefits to Your Business</h1>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Increased Efficiency</h2>
-                    <p class="text-gray-600">Streamline your operations, reduce manual processes, and allow your staff to focus on delivering excellent customer service.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8M8 11h8m-8 4h8" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Enhanced Customer Experience</h2>
-                    <p class="text-gray-600">Fast, accurate order processing and personalized service to increase customer satisfaction and loyalty.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9 9 9-9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Scalability</h2>
-                    <p class="text-gray-600">Easily scale your POS system as your business grows, accommodating new locations and higher transaction volumes effortlessly.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16m-7 4h7M5 14h3" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Data-Driven Decisions</h2>
-                    <p class="text-gray-600">Leverage real-time data and analytics to make informed decisions that drive business growth.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Reduced Training Time</h2>
-                    <p class="text-gray-600">Integrated recipe management and training videos help reduce training time and costs, ensuring your staff is well-prepared and efficient.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9 9 9-9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Operational Flexibility</h2>
-                    <p class="text-gray-600">Manage taxes and product tags effortlessly, allowing for easy adaptation to different menu types and efficient product filtering at all levels.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="text-orange-500 text-5xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Seamless Integration</h2>
-                    <p class="text-gray-600">OrderSune’s POS system is a flexible, reliable, and user-friendly solution that adapts to the unique needs of your restaurant. Simplify your operations, enhance customer satisfaction, and boost your profitability with our all-in-one platform.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container mx-auto">
-            <h1 class="text-3xl font-bold text-center mb-5">Benefits to Your Business</h1>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Increased Efficiency</h2>
-                    <p class="">Streamline your operations, reduce manual processes, and allow your staff to focus on delivering excellent customer service.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8M8 11h8m-8 4h8" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Enhanced Customer Experience</h2>
-                    <p class="text-gray-600">Fast, accurate order processing and personalized service to increase customer satisfaction and loyalty.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9 9 9-9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Scalability</h2>
-                    <p class="text-gray-600">Easily scale your POS system as your business grows, accommodating new locations and higher transaction volumes effortlessly.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Data-Driven Decisions</h2>
-                    <p class="text-gray-600">Leverage real-time data and analytics to make informed decisions that drive business growth.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Reduced Training Time</h2>
-                    <p class="text-gray-600">Integrated recipe management and training videos help reduce training time and costs, ensuring your staff is well-prepared and efficient.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9 9 9-9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Operational Flexibility</h2>
-                    <p class="text-gray-600">Manage taxes and product tags effortlessly, allowing for easy adaptation to different menu types and efficient product filtering at all levels.</p>
-                </div>
-                
-                <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card">
-                    <div class="text-orange-500 text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-semibold mb-2">Seamless Integration</h2>
-                    <p class="text-gray-600">OrderSune’s POS system is a flexible, reliable, and user-friendly solution that adapts to the unique needs of your restaurant. Simplify your operations, enhance customer satisfaction, and boost your profitability with our all-in-one platform.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
 </body>
+
 </html>
