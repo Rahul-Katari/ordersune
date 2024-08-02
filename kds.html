@@ -12,16 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <style>
-        * {
-            font-family: 'Roboto';
+        .custom-shape {
+            border-radius: 30px 30px 100px 30px;
+            padding: 10px;
         }
 
-        .pos div:nth-child(odd) {
-            background-color: #D24321;
+        .card {
+            transition: transform 0.2s ease, clip-path 0.4s ease;
         }
 
-        .pos div:nth-child(even) {
-            background: #F27322;
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .custom-shape:hover .heading-border {
+            background-color: #fff;
+        }
+
+        .custom-shape .heading-border {
+            background-color: #000;
+        }
+        .products-nav img{
+            height: 30px;
+            min-width: 30px;
         }
     </style>
 </head>
@@ -71,7 +84,7 @@
                     class="flex flex-col p-4 md:p-0 rounded-lg md:flex-row rtl:space-x-reverse text-[#002959] md:items-center">
                     <li>
                         <div
-                            class="flex items-center md:justify-between w-full  text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">
+                            class="flex items-center md:justify-between w-full  text-gray-900 rounded bg-[#D243211A] font-semibold text-[#D24321]">
                             <a href="products.html" class="py-2 px-3">
                                 Products
                             </a>
@@ -87,17 +100,16 @@
                             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
                             <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
                                 <li class="">
-                                    <a href="pos.html"
-                                        class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                    <a href="pos.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                             src="./assets/images/products/point-of-sale.png" alt="">Point of
                                         sale</a>
                                 </li>
                                 <li class="">
-                                    <a href="kiosk.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                    <a href="#" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                             src="./assets/images/products/kiosk.png" alt="">Kiosk Self Service</a>
                                 </li>
                                 <li class="">
-                                    <a href="kds.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                    <a href="#" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                             src="./assets/images/products/kitchen.png" alt="">Kitchen Display
                                         System</a>
                                 </li>
@@ -107,7 +119,7 @@
                                         Tracking</a>
                                 </li>
                                 <li class="">
-                                    <a href="ecommerce.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
+                                    <a href="#" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                             src="./assets/images/products/ecommerce.png" alt="">Ecommerce</a>
                                 </li>
                                 <li class="">
@@ -257,13 +269,13 @@
                                                 sale</a>
                                         </li>
                                         <li class="">
-                                            <a href="kiosk.html"
+                                            <a href="#"
                                                 class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                                     src="./assets/images/products/kiosk.png" alt="">Kiosk Self
                                                 Service</a>
                                         </li>
                                         <li class="">
-                                            <a href="kds.html"
+                                            <a href="#"
                                                 class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                                     src="./assets/images/products/kitchen.png" alt="">Kitchen Display
                                                 System</a>
@@ -275,7 +287,7 @@
                                                 Tracking</a>
                                         </li>
                                         <li class="">
-                                            <a href="ecommerce.html"
+                                            <a href="#"
                                                 class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img
                                                     src="./assets/images/products/ecommerce.png" alt="">Ecommerce</a>
                                         </li>
@@ -408,11 +420,59 @@
                 </div>
             </nav>
         </div>
+        <div class="bg-[#DC694B] py-4 flex md:justify-center items-center space-x-6 products-nav overflow-auto max-sm:px-4">
+            <div>
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white  p-2.5 flex justify-center items-center">
+                            <img class="relative z-[1]" src="./assets/product-Icons/Point-of-Sale.png"
+                                alt="Point of Sale">
+                        </span>
+                    </div>
+                    <div
+                        class=" top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">
+                        Point of Sale</div>
+                </div>
+            </div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Kitchen.png" alt="Kitchen"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Digital.png" alt="Digital"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Kiosk.png" alt="Kiosk"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Order.png" alt="Order"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Ecommerce.png" alt="Ecommerce"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Call-Center.png" alt="Call Center"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Social-Media.png" alt="Social Media"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Reservations.png" alt="Reservations"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Loyalty.png" alt="Loyalty"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Payments.png" alt="Payments"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Inventory.png" alt="Inventory"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Product.png" alt="Product"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Tableside.png" alt="Tableside"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Advanced.png" alt="Advanced"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Aggregator.png" alt="Aggregator"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Coupons.png" alt="Coupons"></div>
+            <div class=" rounded-full bg-white  p-2.5 flex justify-center items-center"><img class="relative z-[1]"
+                    src="./assets/product-Icons/Social-Media.png" alt="Social Media"></div>
+        </div>
     </header>
 
-    <main class="max-w-screen-2xl "
+    <main class="max-w-screen-2xl"
         style="background: linear-gradient(136.79deg, rgba(210, 67, 33, 0.25) 14.12%, rgba(210, 67, 33, 0.2) 23.53%, rgba(210, 67, 33, 0.15) 32.29%, rgba(210, 67, 33, 0.125) 40.85%, rgba(210, 67, 33, 0.075) 47.69%, rgba(210, 67, 33, 0.04) 56.89%);">
-
         <div class="grid md:grid-cols-6 py-5 md:ps-24 ">
             <div class="col-span-3 flex flex-col justify-center max-sm:px-4">
                 <p class="text-[#D24321] text-lg font-semibold">Tired of working with too many providers for your
@@ -491,394 +551,187 @@
                 </div>
             </div>
         </div>
-        <div class="md:px-24 px-4 max-sm:pt-10">
-            <section class="max-sm:space-y-10">
-                <div class="flex justify-center space-x-4 md:space-x-10 mb-14">
-                    <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
-">Get a Free
-                        Demo</button>
-                    <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
-">Start a Free
-                        Trial</button>
-                </div>
-
-                <div class="">
-                    <h2 class="text-3xl font-bold">Effortlessly sell anywhere, anytime with ordersune</h2>
-                    <p class="mt-2">A fast and user-friendly restaurant POS software that effortlessly handles high
-                        order
-                        volumes.
-                    </p>
-                    <div class="grid md:grid-cols-6 md:gap-16 mt-10">
-                        <div class=" md:col-span-2 col-span-3 md:mx-0 col-start-2">
-                            <img src="./assets/picture2.png" alt="" class="md:w-full">
-                        </div>
-                        <div class="md:col-span-4 col-span-5 md:mt-8">
-                            <p class="md:text-3xl md:leading-[52px] text-justify">Optimize your restaurant workflow with
-                                OrderSune,
-                                the <span class="text-[#B33632] font-semibold">all-in-one POS</span> that streamlines
-                                operations
-                                across all platforms, simplifying management and letting you <span
-                                    class="text-[#49B447] font-medium">focus
-                                    on your
-                                    customers</span></p>
+        <div class="max-w-7xl mx-auto max-sm:mx-4">
+            <section>
+                <h2 class="text-center text-3xl font-bold py-10">Why Choose OrderSune POS? </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Real-Time Order Updates -->
+                    <div class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Real-Time Order Updates</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Stay ahead of the game with instant order updates. Our KDS displays orders as soon as they are placed, reducing communication errors and ensuring that your kitchen staff is always aware of what needs to be prepared next.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V3m0 15v-3m6-6h3m-15 0H3m15 6h3m-15 0H3m3 0h-3m15 0h-3m-3 3v-3m6 3v-3m-6 3h-6" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid md:grid-cols-6 md:gap-16">
-                    <div class="md:col-span-4 col-span-5 flex flex-col justify-center">
-                        <p class="md:text-3xl md:leading-[52px] text-justify"><span
-                                class="text-[#002959] font-medium">Drive
-                                sales growth</span>
-                            <img src="./assets/graph.png" alt="" class="w-8 inline"> and <span
-                                class="font-semibold">boost</span> <span
-                                class="text-[#002959] font-medium">profitability</span> with
-                            OrderSune, leveraging integrated tools and analytics designed to optimize operations and
-                            enhance
-                            customer engagement.
-                        </p>
+                    <!-- Multi-Screen Flexibility -->
+                    <div class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Multi-Screen Flexibility</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Optimize your kitchen workflow with the ability to use multiple screens per section. Easily manage different parts of the kitchen, from appetizers to main courses, and desserts, with dedicated screens for each section. This flexibility allows for specialized order management tailored to your kitchen’s unique needs.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:col-span-2 col-span-3 col-start-2 max-sm:order-first">
-                        <img src="./assets/picture3.png" alt="" class="w-full">
-                    </div>
-                </div>
 
-                <div class="grid md:grid-cols-6 md:gap-16 md:my-20">
-                    <div class="col-start-2 md:col-span-2 col-span-3">
-                        <img src="./assets/picture4.png" alt="" class="w-full">
+                    <!-- Comprehensive Order Monitoring -->
+                    <div class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Comprehensive Order Monitoring</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Keep track of every order from start to finish. Our system monitors order times meticulously, helping you ensure timely preparation and delivery. This feature is crucial for maintaining high standards of service and customer satisfaction.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3v6h6V3H3zm3 6V9H6V8h6v1H9v2H6v1zM15 4v8h6V4h-6zm6 6h-4V8h4v2zM9 11v8h6v-8H9zm4 6H10v-4h3v4z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:col-span-4 col-span-5 flex flex-col justify-center">
-                        <p class="md:text-3xl md:leading-[52px] text-justify"><span
-                                class="text-[#007FFF] font-medium">Enhance customer
-                                experience</span> with OrderSune's <span
-                                class="text-[#D14420] font-medium">tailor-made</span> software,
-                            designed to meet the unique needs of your
-                            restaurant, ensuring seamless service and personalized interactions.</p>
-                    </div>
-                </div>
 
-                <div class="md:my-20">
-                    <h2 class="md:text-2xl font-bold">Product Highlights</h2>
-                    <p class="mt-2 md:text-lg text-sm text-justify">OrderSune is the all-in-one POS (Point of Sale)
-                        platform
-                        designed to
-                        enhance your
-                        operations.
-                        Our suite of solutions includes a cutting-edge Kitchen Display System (KDS), Bring Your Own
-                        Device
-                        (BYOD)
-                        capability, self-service kiosks, and dynamic digital menu boards. Optimize order management with
-                        real-time
-                        tracking and efficient payment processing, while engaging customers through social media
-                        ordering
-                        and
-                        loyalty programs. Streamline inventory management and aggregator integrations, and leverage
-                        AI-powered
-                        product recommendations for increased sales. Simplify online ordering, reservations, and QR code
-                        ordering.
-                        OrderSune is the future of POS solutions—boost your efficiency, customer satisfaction, and
-                        profitability
-                        today.</p>
+                    <!-- Scalable Solutions for Any Size -->
+                    <div class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Scalable Solutions for Any Size</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Whether you run a small bistro or a large restaurant, OrderSune’s KDS scales to fit your needs. Configure the system according to your specific requirements, allowing for a seamless integration into your existing kitchen operations.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9h8v6H8zM3 4h2v16H3V4zm16 0h2v16h-2V4zM4 20h16v2H4v-2zM12 2h2v4h-2V2z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clear Analytics for Enhanced Performance -->
+                    <div class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0"></div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Clear Analytics for Enhanced Performance</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Gain valuable insights into your kitchen operations with our clear and detailed analytics. Monitor preparation times, identify bottlenecks, and make data-driven decisions to enhance efficiency and productivity.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4h16v16H4V4zm8 8h8v8h-8v-8zm-8 0h8v8H4v-8z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
-            <div class="relative mt-60 rounded-[40px] text-center">
-                <div
-                    class="absolute top-[-13rem] left-1/2 transform -translate-x-1/2 w-64 h-64 rounded-full flex flex-col pt-4 items-center">
-                    <img src="./assets/all-in-one.png" alt="POS Icon" class="w-24">
-                    <strong class="text-[#D24322] text-3xl uppercase">All-in-one<br>Point of Sale</strong>
-                </div>
-                <div
-                    class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 justify-center relative p-8">
-                    <div class=" flex flex-col justify-around">
-                        <img src="./assets/kitchen-display.png" alt="Kitchen Display Systems" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Kitchen Display <br> Systems</h2>
-                        <p class="text-xs leading-5">Improves kitchen efficiency by digitally displaying orders for easy
-                            tracking and
-                            preparation.</p>
-                    </div>
-                    <div class=" flex flex-col justify-around">
-                        <img src="./assets/digital-menu.png" alt="Digital Menu Boards" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Digital <br> Menu Boards</h2>
-                        <p class="text-xs leading-5">Displays dynamic menus and promotions, enhancing visual appeal and
-                            upselling
-                            opportunities.</p>
-                    </div>
-                    <div class=" flex flex-col justify-around">
-                        <img src="./assets/self-ordering.png" alt="Self Ordering" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">KIOSK <br> SELF ORDERING</h2>
-                        <p class="text-xs leading-5">Empowers customers to place orders themselves, reducing wait times
-                            and labor
-                            costs.</p>
-                    </div>
-                    <div class=" flex flex-col justify-around">
-                        <img src="./assets/order-tracking.png" alt="Order Tracking" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Order Tracking</h2>
-                        <p class="text-xs leading-5">Allows real-time monitoring of order status, enhancing transparency
-                            and customer
-                            satisfaction.
-                        </p>
-                    </div>
 
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/ecommerce-icon.png" alt="E-commerce" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">E-commerce</h2>
-                        <p class="text-xs leading-5">Enables online ordering, expanding sales channels and customer
-                            reach.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/call-center.png" alt="Call Center Ordering" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Call Center <br> Ordering</h2>
-                        <p class="text-xs leading-5">Manages phone orders seamlessly, integrating them with other sales
-                            channels.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/social-media.png" alt="Social Media Ordering" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Social Media <br> Ordering</h2>
-                        <p class="text-xs leading-5">Captures orders from social media platforms, increasing convenience
-                            for customers.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/reservations.png" alt="Reservations" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Reservations</h2>
-                        <p class="text-xs leading-5">Simplifies table booking, reducing no-shows and optimizing seating
-                            arrangements.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/loyalty-program.png" alt="Loyalty Program" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Loyalty <br> Program</h2>
-                        <p class="text-xs leading-5">Rewards repeat customers, boosting retention and sales.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/payments-processing.png" alt="Payments Processing" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Payments <br> Processing</h2>
-                        <p class="text-xs leading-5">Facilitates secure and diverse payment options, improving
-                            transaction speed and customer satisfaction.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/inventory-management.png" alt="Inventory Management" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Inventory <br> Management</h2>
-                        <p class="text-xs leading-5">Tracks stock levels accurately, preventing shortages and reducing
-                            waste.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/product-recommendations.png" alt="Product Recommendations"
-                            class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Product Recommendations</h2>
-                        <p class="text-xs leading-5">Suggests items to customers based on their preferences, increasing
-                            average order value.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/table-side-ordering.png" alt="Table Side Ordering" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Table Side <br> Ordering</h2>
-                        <p class="text-xs leading-5">Allows customers to order from their own devices, enhancing
-                            convenience and reducing wait times.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/advanced-analytics.png" alt="Advanced Analytics" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Advanced <br> Analytics</h2>
-                        <p class="text-xs leading-5">Provides detailed analytics on sales and operations, supporting
-                            informed decision-making.</p>
-                    </div>
-                    <div class="flex flex-col justify-around">
-                        <img src="./assets/advanced-analytics.png" alt="Aggregator Integrations" class="w-24 mx-auto">
-                        <h2 class="text-xl uppercase font-semibold mt-2">Aggregator <br> Integrations</h2>
-                        <p class="text-xs leading-5">Connects with delivery platforms, streamlining order management and
-                            expanding reach.</p>
-                    </div>
-                    <div class="xl:col-span-5 lg:col-span-4 md:col-span-3 sm:col-span-2 gap-10 md:flex justify-center">
-                        <div class="flex flex-col justify-around">
-                            <img src="./assets/coupons-discounts.png" alt="Coupons & Discounts" class="w-24 mx-auto">
-                            <h2 class="text-xl uppercase font-semibold mt-2">Coupons & <br> Discounts</h2>
-                            <p class="text-xs leading-5">Manages promotions effectively, </br> attracting new
-                                customers
-                                and </br>
-                                retaining existing ones.</p>
-                        </div>
-                        <div class="flex flex-col justify-around">
-                            <img src="./assets/email-sms-marketing.png" alt="Email & SMS Marketing"
-                                class="w-24 mx-auto">
-                            <h2 class="text-xl uppercase font-semibold mt-2">Email & SMS <br> Marketing</h2>
-                            <p class="text-xs leading-5">Engages customers with targeted </br> campaigns, driving repeat
-                                </br>
-                                business
-                                and promotions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section class="py-10">
+                <div class="container mx-auto">
+                    <h1 class="text-3xl font-bold text-center my-5">Benefits to Your Business</h1>
 
-            <div class="">
-                <h3 class="md:text-3xl text-lg font-semibold md:mt-10 mb-8">The Impact of Our Achievements in Numbers
-                </h3>
-                <div class="achievements-container grid md:grid-cols-8 gap-4">
-                    <div class="col-span-3">
-                        <img src="./assets/Achievements.png" alt="" class="w-full max-w-md">
-                    </div>
-                    <div class="achievements-section col-span-5 flex flex-col justify-between">
-                        <div class="achievements-content md:text-2xl text-justify mt-5">
-                            Discover how OrderSune is transforming businesses with our impressive
-                            performance
-                            numbers and proven results. Explore the key metrics that highlight our impact and
-                            success.
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v16m8-8H4" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold mb-2">Improved Kitchen Efficiency</h2>
+                            <p class="">Reduce order preparation times and increase accuracy with real-time updates and multi-screen capabilities. Your kitchen staff can focus on cooking, not on managing orders.</p>
                         </div>
-                        <div class="stats grid md:grid-cols-2 text-xl md:gap-y-20 gap-10 my-10">
-                            <div class="stat-item flex items-center">
-                                <img src="./assets/line.png" alt="line" class="h-[100px]">
-                                <div class="ps-4">
-                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">99.99%</span>
-                                        uptime</h2>
-                                    <p>zero outages</p>
-                                </div>
-                            </div>
-                            <div class="stat-item flex items-center">
-                                <img src="./assets/line.png" alt="line" class="h-[100px]">
-                                <div class="ps-4">
-                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">1M </span>
-                                        Plus</h2>
-                                    <p>Peak transactions per day</p>
-                                </div>
-                            </div>
-                            <div class="stat-item flex items-center">
-                                <img src="./assets/line.png" alt="line" class="h-[100px]">
-                                <div class="ps-4">
-                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">33K</span>
-                                        Plus</h2>
-                                    <p>Products with multi-level categories</p>
-                                </div>
-                            </div>
-                            <div class="stat-item flex items-center">
-                                <img src="./assets/line.png" alt="line" class="h-[100px]">
-                                <div class="ps-4">
-                                    <h2 class="font-medium text-2xl"><span class="text-4xl font-semibold">50 </span>
-                                        Plus</h2>
-                                    <p>External System Integrations</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- any restaurant  -->
-            <div class="">
-                <h2 class="md:text-3xl text-xl font-bold mt-10 mb-8">A POS that works for any restaurant</h2>
-                <div
-                    class="grid xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 flex-wrap justify-center mt-4 text-center text-white font-semibold text-xl pos gap-y-6">
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/food-beverage.png" alt="Food & Beverage" class="mx-auto mb-2 w-8/12">
-                        <p>Food & Beverage</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/qsr-chains.png" alt="QSR Chains" class="mx-auto mb-2 w-8/12">
-                        <p>QSR Chains</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/counter-service.png" alt="Counter Service" class="mx-auto mb-2 w-8/12">
-                        <p>Counter Service</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/full-service.png" alt="Full Service Restaurants"
-                            class="mx-auto mb-2 w-8/12">
-                        <p>Full Service Restaurants</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/food-trucks.png" alt="Food Trucks" class="mx-auto mb-2 w-8/12">
-                        <p>Food Trucks</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/cafes-coffee.png" alt="Cafes & Coffee Shops" class="mx-auto mb-2 w-8/12">
-                        <p>Cafes & Coffee Shops</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/ice-cream.png" alt="Ice Cream & Dessert Shops"
-                            class="mx-auto mb-2 w-8/12">
-                        <p>Ice Cream & Dessert Shops</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/concession-stands.png" alt="Concession Stands"
-                            class="mx-auto mb-2 w-8/12">
-                        <p>Concession Stands</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/juice-smoothy.png" alt="Juice & Smoothy Bars" class="mx-auto mb-2 w-8/12"
-                            style="height: 90px;">
-                        <p>Juice & Smoothy Bars</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/bakeries.png" alt="Bakeries" class="mx-auto mb-2 w-8/12">
-                        <p>Bakeries</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/snack-bars.png" alt="Snack Bars" class="mx-auto mb-2 w-8/12">
-                        <p>Snack Bars</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/pop-up.png" alt="Pop up restaurants & events"
-                            class="mx-auto mb-2 w-8/12">
-                        <p>Pop up restaurants & events</p>
-                    </div>
-                    <div class="pos1 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/bars-pubs.png" alt="Bars & pubs" class="mx-auto mb-2 w-8/12">
-                        <p>Bars & pubs</p>
-                    </div>
-                    <div class="pos2 p-4 flex flex-col gap-5 justify-end">
-                        <img src="./assets/pos/canteens.png" alt="Canteens or Cafeterias" class="mx-auto mb-2 w-8/12">
-                        <p>Canteens or Cafeterias</p>
-                    </div>
-                </div>
-            </div>
 
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7h8M8 11h8m-8 4h8" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold mb-2">Enhanced Order Management</h2>
+                            <p class="">Seamlessly manage orders across different kitchen sections, ensuring that every dish is prepared correctly and on time.</p>
+                        </div>
 
-        </div>
-        <div class="bg-[#F2732299] p-10 md:mx-24 max-sm:px-4 my-20">
-            <div class="contact-form grid lg:grid-cols-2 md:gap-16 gap-8">
-                <div class="demo-form bg-white rounded-xl p-5">
-                    <form action="">
-                        <big><big><span>Schedule a free demo</span></big></big>
-                        <div class="name flex flex-wrap">
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Name*</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 7l9 9 9-9" />
+                                </svg>
                             </div>
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Restaurant Name*</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                            <h2 class="text-xl font-semibold mb-2">Scalable for Growth</h2>
+                            <p class="">As your business grows, our KDS grows with you. Easily add more screens and configure new sections without disrupting your kitchen operations.</p>
+                        </div>
+
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
+                                </svg>
                             </div>
+                            <h2 class="text-xl font-semibold mb-2">Data-Driven Insights</h2>
+                            <p class="">Utilize our powerful analytics to understand your kitchen’s performance. Make informed decisions to improve workflows and enhance overall efficiency.</p>
                         </div>
-                        <div class="p-2">
-                            <label for="" class="block">Email address*</label>
-                            <input type="email" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
-                        </div>
-                        <div class="p-2">
-                            <label for="" class="block">Phone number*</label>
-                            <input type="number" name="" id="" class="w-full p-2 border border-gray-300 rounded-lg">
-                        </div>
-                        <div class="name flex flex-wrap">
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">City</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v16m8-8H4" />
+                                </svg>
                             </div>
-                            <div class="w-full md:w-1/2 p-2">
-                                <label for="" class="block">Country</label>
-                                <input type="text" class="w-full p-2 border border-gray-300 rounded-lg">
+                            <h2 class="text-xl font-semibold mb-2">Seamless Integration for a Unified Experience</h2>
+                            <p class="">OrderSune’s KDS integrates effortlessly into your existing operations, providing a cohesive, user-friendly platform that enhances kitchen efficiency and productivity. With real-time updates, multi-screen flexibility, and comprehensive order monitoring, our KDS is the ultimate solution for modern kitchen management.</p>
+                        </div>
+
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 7l9 9 9-9" />
+                                </svg>
                             </div>
+                            <h2 class="text-xl font-semibold mb-2">Ready to transform your kitchen operations?</h2>
+                            <p class="">Contact us today for a free demo and see how OrderSune’s KDS can revolutionize your kitchen.</p>
                         </div>
-                        <div class="p-2">
-                            <input type="checkbox" name="" id="" class="mr-2">
-                            <p class="inline">By submitting this form, you acknowledge that your information will be
-                                processed according to ordersune’s privacy statement.</p>
-                        </div>
-                        <div class="submit-button p-2 text-center">
-                            <input type="submit" name="" id="" value="submit"
-                                class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-2 px-6 rounded-full cursor-pointer">
-                        </div>
-                    </form>
+
+                    </div>
                 </div>
-                <div class=" flex justify-center">
-                    <img src="./assets/picture5.png" alt="" class="w-full max-w-md">
-                </div>
-            </div>
+            </section>
         </div>
     </main>
+
     <footer class="bg-black text-white md:p-10 py-10">
         <img src="./assets/footerlogo.png" alt="Footer Logo" class="md:mx-12 mx-4">
         <div class="grid md:grid-cols-12 justify-between md:mx-9 mx-4 mt-8 max-sm:gap-6">
