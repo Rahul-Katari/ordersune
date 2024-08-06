@@ -41,22 +41,15 @@
 </head>
 
 <body class="font-sans max-w-screen-2xl container mx-auto">
-
     <header id="header"></header>
 
     <main class="max-w-screen-2xl"
         style="background: linear-gradient(136.79deg, rgba(210, 67, 33, 0.25) 14.12%, rgba(210, 67, 33, 0.2) 23.53%, rgba(210, 67, 33, 0.15) 32.29%, rgba(210, 67, 33, 0.125) 40.85%, rgba(210, 67, 33, 0.075) 47.69%, rgba(210, 67, 33, 0.04) 56.89%);">
         <div class="grid md:grid-cols-6 py-5 md:ps-24 ">
             <div class="col-span-3 flex flex-col justify-center max-sm:px-4">
-                <p class="text-[#D24321] text-lg font-semibold">Tired of working with too many providers for your
-                    digital needs?</p>
-                <h1 class="text-5xl max-sm:text-3xl leading-[57px] font-medium">Elevate your restaurant experience with
-                    our <br> All-in-One <span class="font-bold">POS</span> Platform</h1>
-                <p class="mt-4 leading-7 text-justify">Streamline operations and enhance customer satisfaction with our
-                    all-in-one digital
-                    solutions. From POS and Kiosks to Mobile Apps and Digital Menu Boards, OrderSune offers everything
-                    you
-                    need to boost efficiency and engagement. Simplify your digital needs and drive growth effortlessly.
+                <!-- <p class="text-[#D24321] text-lg font-semibold">Transform Your Restaurant Operations with OrderSune’s Cloud-Based POS System</p> -->
+                <h1 class="text-5xl max-sm:text-3xl leading-[57px] font-medium">Transform Your Restaurant Operations with OrderSune’s Cloud-Based POS System</h1>
+                <p class="mt-4 leading-7 text-justify">Running a restaurant involves juggling multiple tasks simultaneously, from managing inventory and processing orders to ensuring customer satisfaction. OrderSune’s Point of Sale (POS) system is designed to simplify your operations, enhance efficiency, and provide a seamless customer experience. Our POS system adapts to your business needs, ensuring seamless integration and optimal performance.
                 </p>
             </div>
             <div class="col-span-3 relative">
@@ -71,7 +64,7 @@
                                 class=" md:p-16 max-sm:px-16 max-sm:pt-10 z-[1] relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
                                 @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
                                 <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out"
-                                    src="./assets/images/home/video.png" width="768" height="432"
+                                    src="/assets/images/home/video.png" width="768" height="432"
                                     alt="Modal video thumbnail" />
                                 <!-- Play icon -->
                                 <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out"
@@ -81,7 +74,7 @@
                                         d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
                                 </svg>
                             </button>
-                            <img src="./assets/images/home/banner-bg.png" alt="" class="absolute top-0">
+                            <img src="/assets/images/home/banner-bg.png" alt="" class="absolute top-0">
 
                             <!-- End: Video thumbnail -->
 
@@ -128,7 +121,7 @@
             <section>
                 <h2 class="text-center text-3xl font-bold py-10">Why Choose OrderSune POS? </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Empower Customers with Self-Service -->
+                    <!-- Global Integration with Major Providers -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -136,12 +129,13 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Empower Customers with Self-Service</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Global Integration with Major Providers
+                            </h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                Our kiosks enable customers to place their own orders effortlessly. This self-service
-                                option not only speeds up the ordering process but also reduces the need for additional
-                                staff, allowing you to allocate resources more efficiently.
+                                OrderSune’s platform is integrated with leading email and SMS providers across the
+                                globe. This ensures you can reach your customers wherever they are, using the most
+                                reliable and effective communication channels available.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none"
@@ -153,7 +147,7 @@
                         </div>
                     </div>
 
-                    <!-- Intuitive and User-Friendly Interface -->
+                    <!-- Customizable Provider Integration -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -161,12 +155,12 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Intuitive and User-Friendly Interface</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Customizable Provider Integration</h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                Designed with the user in mind, our kiosks feature an intuitive interface that guides
-                                customers through the ordering process. With clear visuals and easy navigation,
-                                customers can quickly customize their orders to their preferences.
+                                If you have a preferred email or SMS provider, OrderSune can easily integrate with it.
+                                This flexibility allows you to use the services you are comfortable with while
+                                benefiting from the powerful features of our marketing platform.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none"
@@ -180,7 +174,7 @@
                         </div>
                     </div>
 
-                    <!-- Reduce Wait Times and Improve Accuracy -->
+                    <!-- Targeted Marketing Campaigns -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -188,12 +182,13 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Reduce Wait Times and Improve Accuracy</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Targeted Marketing Campaigns</h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                By allowing customers to input their orders directly, OrderSune’s kiosks minimize the
-                                risk of errors and ensure orders are processed quickly. This leads to shorter wait times
-                                and higher customer satisfaction.
+                                Reach the right segment of users with targeted email and SMS marketing campaigns. Our
+                                system allows you to segment your audience based on various criteria such as purchase
+                                history, preferences, and demographic information, ensuring your messages are relevant
+                                and impactful.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" fill="none"
@@ -205,7 +200,7 @@
                         </div>
                     </div>
 
-                    <!-- Customizable for Your Brand -->
+                    <!-- Easy Management and Automation -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -213,37 +208,13 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Customizable for Your Brand</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Easy Management and Automation</h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                Personalize your kiosks to reflect your brand’s identity. From custom graphics to
-                                tailored menu options, our kiosks can be configured to match your restaurant’s unique
-                                style and offerings.
-                            </p>
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M8 9h8v6H8zM3 4h2v16H3V4zm16 0h2v16h-2V4zM4 20h16v2H4v-2zM12 2h2v4h-2V2z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Device Flexibility -->
-                    <div
-                        class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
-                        <div
-                            class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0">
-                        </div>
-                        <div class="z-[1]">
-                            <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Device Flexibility</h2>
-                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
-                            <p class="text-sm mb-8 flex-grow relative z-10">
-                                OrderSune’s Kiosk solution works on any device, whether it’s a tablet, iPad, Windows or
-                                Mac screen, or dedicated kiosk hardware. This flexibility gives restaurants the power to
-                                choose their preferred devices, reducing maintenance costs and simplifying operations.
+                                Manage your email and SMS marketing campaigns effortlessly with our intuitive admin
+                                dashboard. Schedule messages, automate follow-ups, and track performance—all from one
+                                central platform. This automation saves time and ensures consistent communication with
+                                your customers.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none"
@@ -255,7 +226,7 @@
                         </div>
                     </div>
 
-                    <!-- Seamless Integration with POS System -->
+                    <!-- Personalized Messaging -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -263,24 +234,23 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Seamless Integration with POS System</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Personalized Messaging</h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                Our self-service kiosks integrate seamlessly with your existing POS system, ensuring
-                                that all orders are captured accurately and processed efficiently. This unified approach
-                                simplifies order management and enhances overall operational efficiency.
+                                Create personalized messages for your customers based on their preferences and past
+                                interactions. Tailoring your communication increases engagement and boosts the
+                                effectiveness of your campaigns.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2v16m-6-6h12" />
+                                        d="M4 4h16v16H4V4zm12 8h4v4h-4v-4zM4 12h8v8H4v-8zm12 0h4v4h-4v-4z" />
                                 </svg>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Data-Driven Insights -->
+                    <!-- Real-Time Analytics and Insights -->
                     <div
                         class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
                         <div
@@ -288,25 +258,51 @@
                         </div>
                         <div class="z-[1]">
                             <!-- Content -->
-                            <h2 class="text-xl font-bold mb-4 relative z-10">Data-Driven Insights</h2>
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Real-Time Analytics and Insights</h2>
                             <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
                             <p class="text-sm mb-8 flex-grow relative z-10">
-                                Leverage the data collected from kiosk transactions to gain insights into customer
-                                preferences and behavior. Use this information to refine your menu offerings and
-                                marketing strategies, driving business growth.
+                                Track the performance of your email and SMS campaigns in real-time with detailed
+                                analytics. Monitor open rates, click-through rates, conversion rates, and more to
+                                understand the effectiveness of your marketing efforts and make data-driven decisions.
                             </p>
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2v16m-6-6h12" />
+                                        d="M4 8h16M4 12h16M4 16h16" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compliance and Security -->
+                    <div
+                        class="bg-gray-100 p-6 custom-shape overflow-hidden text-gray-900 hover:text-white flex items-center gap-4 hover:translate-x-0 group relative">
+                        <div
+                            class="absolute custom-shape inset-0 bg-orange-500 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0">
+                        </div>
+                        <div class="z-[1]">
+                            <!-- Content -->
+                            <h2 class="text-xl font-bold mb-4 relative z-10">Compliance and Security</h2>
+                            <div class="w-16 h-0.5 mb-4 relative z-10 heading-border"></div>
+                            <p class="text-sm mb-8 flex-grow relative z-10">
+                                Ensure your marketing campaigns comply with global regulations such as GDPR and
+                                CAN-SPAM. Our platform is designed to protect customer data and maintain the highest
+                                standards of security, giving you peace of mind.
+                            </p>
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center relative z-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M12 9v6m-3-3h6" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M5.75 6.75l1.5 1.5m12 0l-1.5-1.5M5.75 17.25l1.5-1.5m12 0l-1.5 1.5" />
                                 </svg>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
             </section>
 
             <section class="py-10">
@@ -322,9 +318,9 @@
                                         d="M12 4v16m8-8H4" />
                                 </svg>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2">Increased Efficiency</h2>
-                            <p>Streamline the ordering process and reduce the burden on your staff, allowing them to
-                                focus on delivering excellent service.</p>
+                            <h2 class="text-xl font-semibold mb-2">Increased Customer Engagement</h2>
+                            <p>Reach your customers with personalized and relevant messages, increasing their
+                                engagement and loyalty.</p>
                         </div>
 
                         <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
@@ -335,9 +331,9 @@
                                         d="M8 7h8M8 11h8m-8 4h8" />
                                 </svg>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2">Enhanced Customer Experience</h2>
-                            <p>Provide a fast, convenient, and accurate ordering experience that meets the expectations
-                                of today’s tech-savvy customers.</p>
+                            <h2 class="text-xl font-semibold mb-2">Improved Marketing Efficiency</h2>
+                            <p>Automate your marketing campaigns and manage them from a single platform, saving
+                                time and reducing effort.</p>
                         </div>
 
                         <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
@@ -348,10 +344,9 @@
                                         d="M3 7l9 9 9-9" />
                                 </svg>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2">Cost Savings</h2>
-                            <p>Reduce labor costs by allowing customers to place their own orders, freeing up staff to
-                                perform other critical tasks. The flexibility to use any device also reduces hardware
-                                maintenance costs.</p>
+                            <h2 class="text-xl font-semibold mb-2">Enhanced Campaign Performance</h2>
+                            <p>Utilize real-time analytics to monitor and optimize your campaigns, ensuring you
+                                achieve the best possible results.</p>
                         </div>
 
                         <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
@@ -362,9 +357,9 @@
                                         d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
                                 </svg>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2">Scalable Solution</h2>
-                            <p>As your business grows, easily add more kiosks to accommodate increased customer traffic
-                                without compromising service quality.</p>
+                            <h2 class="text-xl font-semibold mb-2">Greater Flexibility</h2>
+                            <p>Integrate with your preferred email and SMS providers and customize your
+                                campaigns to suit your specific needs and goals.</p>
                         </div>
 
                         <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
@@ -372,12 +367,12 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" class="w-12 h-12">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 7l9 9 9-9" />
+                                        d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
                                 </svg>
                             </div>
-                            <h2 class="text-xl font-semibold mb-2">Valuable Customer Insights</h2>
-                            <p>Utilize the data captured by your kiosks to understand customer preferences and improve
-                                your offerings, boosting customer loyalty and sales.</p>
+                            <h2 class="text-xl font-semibold mb-2">Regulatory Compliance</h2>
+                            <p>Stay compliant with global regulations and protect your customer data with our
+                                secure and reliable platform.</p>
                         </div>
 
                         <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
@@ -385,16 +380,29 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" class="w-12 h-12">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 4v16m8-8H4" />
+                                        d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
                                 </svg>
                             </div>
                             <h2 class="text-xl font-semibold mb-2">Seamless Integration for a Unified Experience</h2>
-                            <p>OrderSune’s Self-Service Kiosks are designed to fit seamlessly into your restaurant’s
-                                operations, enhancing both efficiency and customer satisfaction. With an intuitive
-                                interface, customizable options, and seamless POS integration, our kiosks are the ideal
-                                solution for modernizing your restaurant.</p>
+                            <p>OrderSune’s Email and SMS Marketing solutions integrate seamlessly into your
+                                restaurant’s operations, providing a powerful tool to enhance your customer outreach.
+                                With global integration, customizable options, and detailed analytics, our platform
+                                empowers you to create effective marketing campaigns that drive engagement and sales.
+                            </p>
                         </div>
 
+                        <div class="p-6 rounded-lg hover:bg-[#d3441ecc] card hover:text-white">
+                            <div class="text-orange-500 text-3xl mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16m-7 4h7M5 14h3M6 6h1m0 0h1m-1-1v1m1 0h1" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl font-semibold mb-2">Ready to enhance your customer communication?</h2>
+                            <p>Contact us today for a free demo and see how OrderSune’s Email and SMS Marketing
+                                solutions can transform your restaurant.</p>
+                        </div>
 
                     </div>
                 </div>
@@ -403,10 +411,9 @@
     </main>
 
     <footer id="footer"></footer>
-    <script src="./assets/js/header.js"></script>
+    <script src="../assets/js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 </body>
 
 </html>
