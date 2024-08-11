@@ -34,15 +34,17 @@ function header() {
         <li>
           <div
             class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">
-            <a href="/products.html" class="py-2 ps-3">Products </a><button id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
-              class="flex items-center md:justify-between w-full py-2 px-3 me-2 text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]"><svg
-                class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 10 6">
+            <a href="/products.html" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+              data-dropdown-trigger="hover"
+              class="py-2 xl:px-3 px-1 flex items-baseline"
+              type="button">Products<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg></button></div>
-          <div id="dropdownNavbar"
+              </svg>
+            </a>
+          </div>
+          <div id="dropdownHover"
             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
             <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
               <li><a href="../../products/pointofsale.html"
