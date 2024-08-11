@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordersune</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .custom-shape {
+            border-radius: 30px 30px 100px 30px;
+        }
+
+        .card {
+            transition: transform 0.2s ease, clip-path 0.4s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .products-nav img {
+            height: 30px;
+            min-width: 30px;
+        }
+    </style>
+</head>
+
+<body class="font-sans max-w-screen-2xl container mx-auto">
+    <header id="header"></header>
+
+    <main class="max-w-screen-2xl"
+        style="background: linear-gradient(136.79deg, rgba(210, 67, 33, 0.25) 14.12%, rgba(210, 67, 33, 0.2) 23.53%, rgba(210, 67, 33, 0.15) 32.29%, rgba(210, 67, 33, 0.125) 40.85%, rgba(210, 67, 33, 0.075) 47.69%, rgba(210, 67, 33, 0.04) 56.89%);">
+        <div class="grid md:grid-cols-7 py-5 md:ps-24 md:pe-5 ">
+            <div class="col-span-3 flex flex-col justify-center max-sm:px-4">
+                <h1 class="text-5xl max-sm:text-3xl leading-[57px] font-semibold">Get a Personalized <br> Quote for Your
+                    Business</h1>
+                <p class="mt-4 leading-7 text-justify">We understand that every business is unique, and so are your
+                    needs. That's why we offer customized pricing plans tailored to fit your specific requirements.
+                    Whether you are a small café, a bustling retail store, or a large restaurant chain, our all-in-one
+                    POS solution can be adapted to provide the best value and performance for your business.
+                </p>
+            </div>
+            <div class="col-span-4 flex justify-end">
+                <div>
+                    <img src="./assets/images/pricing/banner.png" class="py-5 max-w-full" />
+                </div>
+            </div>
+        </div>
+        <div class="container max-w-7xl mx-auto p-4 py-10">
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="./assets/js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body>
+
+</html>
