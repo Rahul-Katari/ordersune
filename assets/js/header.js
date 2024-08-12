@@ -1,10 +1,8 @@
-async function header() {
-  const response = await fetch('header.html');
+async function headerold() {
+  const response = await fetch('/assets/js/header.html');
   const headerHtml = await response.text();
   document.getElementById('header').outerHTML = headerHtml;
 }
-// window.onload = header;
-// header();
 
 function header() {
   const headerHtml = `<header class="bg-white sticky top-0 z-[2] transition-all duration-800">
@@ -420,8 +418,8 @@ function header() {
 header();
 window.onload = function () {
   let fullpath = window.location.pathname.split('.')[0];
-  let path = fullpath.startsWith('/') && fullpath.slice('1');
-  if (path === 'products' || fullpath.includes('/products/')) {
+  let path = fullpath.startsWith('/') && fullpath.split('/').pop();
+  if (fullpath.includes('products')) {
     document.getElementById('productsNav').classList.remove('hidden')
   }
   if (path === 'index' || path === '') {
@@ -450,6 +448,21 @@ window.onload = function () {
     });
   });
 
+  // to make current page active in navbar 
+  console.log(fullpath);
+  document.querySelectorAll('#navbar-default li a').forEach(function (e) {
+    if (fullpath.includes('products')) {
+      document.getElementById('dropdownHoverButton').parentNode.classList.add('bg-[#D243211A]', 'text-[#D24321]', 'font-semibold')
+    }
+    if (e.text.trim().toLowerCase() === fullpath.split('/').pop()) {
+      if (e.text.trim().toLowerCase() === 'products') {
+        e.parentNode.classList.add('bg-[#D243211A]', 'text-[#D24321]', 'font-semibold')
+        e.classList.add('text-[#D24321]')
+      }
+      else
+        e.classList.add('bg-[#D243211A]', 'text-[#D24321]', 'font-semibold')
+    }
+  })
 
 }
 

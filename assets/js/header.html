@@ -12,8 +12,8 @@
           src="/assets/images/social/linkedin.png" alt="LinkedIn" /></div>
     </div>
   </div>
-  <nav class="relative 2xl:px-12 px-4 py-4 flex justify-between items-center bg-white"><a
-      class="text-3xl font-bold leading-none" href="/index.html"><img src="/assets/images/logo.png" class="h-12"
+  <nav class="relative 2xl:px-12 px-4 py-4 flex justify-between items-center bg-white">
+    <a class="text-3xl font-bold leading-none" href="/index.html"><img src="/assets/images/logo.png" class="h-12"
         alt="Ordersune Logo" /></a>
     <div class="lg:hidden"><button class="navbar-burger flex items-center text-blue-600 p-3"><svg
           class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
         </svg></button></div>
     <div class="hidden w-full lg:block md:w-auto max-sm:border max-sm:rounded-lg max-sm:shadow" id="navbar-default">
       <ul class="flex flex-col p-4 md:p-0 rounded-lg md:flex-row rtl:space-x-reverse text-[#002959] md:items-center">
-        <li>
+        <li class="hidden">
           <div
             class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">
             <a href="/products.html" class="py-2 ps-3">Products </a><button id="dropdownNavbarLink"
@@ -114,17 +114,15 @@
           </div>
         </li>
         <li>
-          <div
-            class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">
-            <a href="/products.html" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
-              data-dropdown-trigger="hover"
-              class="py-2 xl:px-3 px-1 flex items-baseline"
-              type="button">Products<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 10 6">
+          <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+            class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]  py-2 xl:px-3 px-1 flex items-baseline">
+            <a href="/products.html" type="button">Products
+            </a>
+            <span href="/products.html" class="cursor-pointer"><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg>
-            </a>
+              </svg></span>
           </div>
           <div id="dropdownHover"
             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
