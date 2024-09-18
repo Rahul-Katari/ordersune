@@ -42,7 +42,6 @@ window.onload = function () {
   });
 
   // to make current page active in navbar
-  console.log(fullpath);
   document.querySelectorAll("#navbar-default li a").forEach(function (e) {
     if (fullpath.includes("products")) {
       document
@@ -119,14 +118,20 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth > 768) {
     window.onscroll = function () {
       var currentScrollpos = window.pageYOffset;
+      if (currentScrollpos === 0) {
+        document.getElementsByTagName("header")[0].classList.remove('shadow-xl');
+      }
       if (prevScrollpos > currentScrollpos) {
-        document.getElementsByTagName("header")[0].classList.add("top-0");
+        // document.getElementsByTagName("header")[0].classList.remove('shadow-xl');
       } else {
-        document.getElementsByTagName("header")[0].classList.add("top-[-40px]");
+        document.getElementsByTagName("header")[0].classList.add("top-[-40px]", "shadow-xl");
       }
 
       prevScrollpos = currentScrollpos;
     };
+  }
+  else {
+    document.getElementsByTagName("header")[0].classList.add("shadow-xl");
   }
   if (window.location.href.includes('pricing')) {
     document.getElementById('scheduleDemo').classList.add('hidden')
