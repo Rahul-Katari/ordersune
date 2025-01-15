@@ -27,11 +27,611 @@
             background: #4E7CD3;
         }
     </style>
+        <style>
+            .feature-card {
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                transition: transform 0.2s ease-in-out;
+            }
+            .feature-card:hover {
+                transform: translateY(-4px);
+            }
+            .feature-icon {
+                width: 48px;
+                height: 48px;
+                margin-bottom: 1rem;
+            }
+            .bg-section {
+                background-color: #f9fafb;
+            }
+            .icon-blue {
+                color: #4F46E5;
+            }
+            .icon-orange {
+                color: #f97316;
+            }
+        </style>
+        <style>
+            .form-input:focus {
+                outline: none;
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+            }
+            
+            select {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+                background-position: right 0.5rem center;
+                background-repeat: no-repeat;
+                background-size: 1.5em 1.5em;
+            }
+        </style>
 </head>
 
 <body class="font-sans max-w-screen-2xl container mx-auto">
 
-    <header id="header"></header>
+    <header class="bg-white sticky top-0 z-[3] transition-all duration-800">
+        <nav class="border border-b border-b-2 relative 2xl:px-12 px-4 py-4 flex justify-between items-center bg-white">
+            <a class="text-3xl font-bold leading-none" href="/index.html"><img src="/assets/images/logo.svg" class="h-12" alt="Ordersune Logo" /></a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden w-full lg:block md:w-auto max-sm:border max-sm:rounded-lg max-sm:shadow" id="navbar-default">
+                <ul class="flex flex-col p-4 md:p-0 rounded-lg md:flex-row rtl:space-x-reverse text-[#002959] md:items-center space-x-3">
+                    <li class="hidden">
+                        <div class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">
+                            <a href="/products.html" class="py-2 ps-3">Products </a>
+                            <button
+                                id="dropdownNavbarLink"
+                                data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center md:justify-between w-full py-2 px-3 me-2 text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]"
+                            >
+                                <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
+                            <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="../../products/pointofsale.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/point-of-sale.png" alt="" /></div>
+                                        Point of sale
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/kiosk.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/kiosk.png" alt="" /></div>
+                                        Kiosk Self Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/kds.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/kitchen.png" alt="" /></div>
+                                        Kitchen Display System
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/order-tracking.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/order-tracking.png" alt="" /></div>
+                                        Order Tracking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/ecommerce.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/ecommerce.png" alt="" /></div>
+                                        Ecommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/digital-menu-boards.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/digital.png" alt="" /></div>
+                                        Digital Menu Boards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/call-center-ordering.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/call-center.png" alt="" /></div>
+                                        Call Center Ordering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/social-media-ordering.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/social-media.png" alt="" /></div>
+                                        Social Media Ordering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/reservations.png" alt="" /></div>
+                                        Reservations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/loyalty.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/loyalty-pro.png" alt="" /></div>
+                                        Loyalty Program
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/payments.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/payments.png" alt="" /></div>
+                                        Payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/inventory.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/inventory-management.png" alt="" /></div>
+                                        Inventory Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/ai-product.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/product-recommendations.png" alt="" /></div>
+                                        Product Recommendations <br />
+                                        using AI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/tableside.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/tableside-ordering.png" alt="" /></div>
+                                        Tableside Ordering / BYOD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/advanced-analytics.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/advanced-reports.png" alt="" /></div>
+                                        Advanced Reports
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/aggregator.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/aggregator.png" alt="" /></div>
+                                        Aggregator Integration
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/coupons.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/coupons-discounts.png" alt="" /></div>
+                                        Coupons & Discounts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/email-sms.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/email-sms.png" alt="" /></div>
+                                        Email & SMS Marketing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div
+                            id="dropdownHoverButton"
+                            data-dropdown-toggle="dropdownHover"
+                            data-dropdown-trigger="hover"
+                            class="flex items-center md:justify-between w-full text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321] py-2 xl:px-3 px-1 flex items-baseline"
+                        >
+                            <a href="/products.html" type="button">Products </a>
+                            <span href="/products.html" class="cursor-pointer">
+                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div id="dropdownHover" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
+                            <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="../../products/pointofsale.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/point-of-sale.png" alt="" /></div>
+                                        Point of sale
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/kiosk.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/kiosk.png" alt="" /></div>
+                                        Kiosk Self Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/kds.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/kitchen.png" alt="" /></div>
+                                        Kitchen Display System
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/order-tracking.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/order-tracking.png" alt="" /></div>
+                                        Order Tracking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/ecommerce.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/ecommerce.png" alt="" /></div>
+                                        Ecommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/digital-menu-boards.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/digital.png" alt="" /></div>
+                                        Digital Menu Boards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/call-center-ordering.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/call-center.png" alt="" /></div>
+                                        Call Center Ordering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/social-media-ordering.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/social-media.png" alt="" /></div>
+                                        Social Media Ordering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/reservations.png" alt="" /></div>
+                                        Reservations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/loyalty.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/loyalty-pro.png" alt="" /></div>
+                                        Loyalty Program
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/payments.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/payments.png" alt="" /></div>
+                                        Payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/inventory.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/inventory-management.png" alt="" /></div>
+                                        Inventory Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/ai-product.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/product-recommendations.png" alt="" /></div>
+                                        Product Recommendations <br />
+                                        using AI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/tableside.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/tableside-ordering.png" alt="" /></div>
+                                        Tableside Ordering / BYOD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/advanced-analytics.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/advanced-reports.png" alt="" /></div>
+                                        Advanced Reports
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/aggregator.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/aggregator.png" alt="" /></div>
+                                        Aggregator Integration
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/coupons.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/coupons-discounts.png" alt="" /></div>
+                                        Coupons & Discounts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../products/email-sms.html" class="flex items-center px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                        <div><img src="/assets/images/products/email-sms.png" alt="" /></div>
+                                        Email & SMS Marketing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/pricing.html" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Pricing</a></li>
+                    <li><a href="/solutions.html" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Solutions</a></li>
+                    <li><a href="#" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Partners</a></li>
+                    <li><a href="#" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321] hidden">Resources</a></li>
+                    <li><a href="#" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Company</a></li>
+                    <li><a href="/contactus.html" class="block py-2 xl:px-3 px-1 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center xl:space-x-6 space-x-3 max-lg:hidden">
+                <a href="/contactus.html" class=" border border-[#3552C4] text-[#3552C4] py-3 xl:px-8 px-4 rounded-xl max-lg:hidden">Contact Us</a>
+                <a href="/contactus.html" class="bg-[#3552C4] font-bold text-white py-3 xl:px-8 px-4 rounded-xl max-lg:hidden">Get a Demo </a>
+            </div>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                style="
+                    background-image: linear-gradient(
+                        136.79deg,
+                        rgba(210, 67, 33, 0.25) 14.12%,
+                        rgba(210, 67, 33, 0.2) 23.53%,
+                        rgba(210, 67, 33, 0.15) 32.29%,
+                        rgba(210, 67, 33, 0.125) 40.85%,
+                        rgba(210, 67, 33, 0.075) 47.69%,
+                        rgba(210, 67, 33, 0.04) 56.89%
+                    );
+                "
+                class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm bg-white border-r overflow-y-auto justify-between"
+            >
+                <div class="p-6">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="index.html"><img src="/assets/images/logo.svg" class="h-12" alt="Ordersune Logo" /></a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul class="divide-y divide-[#d3441ecc]">
+                            <li>
+                                <div class="flex items-center">
+                                    <a href="products.html" class="py-2 px-3">Products </a>
+                                    <button
+                                        id="dropdownMobileNavbarLink"
+                                        data-dropdown-toggle="dropdownMobileNavbar"
+                                        class="flex items-center md:justify-between w-fit py-2 px-3 text-gray-900 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]"
+                                    >
+                                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div id="dropdownMobileNavbar" class="max-h-[70%] z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow transform-none h-full md:h-[70vh] overflow-auto border shadow">
+                                    <ul class="p-2 text-sm font-medium space-y-3" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="../../products/pointofsale.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/point-of-sale.png" alt="" />Point of sale</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/kiosk.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/kiosk.png" alt="" />Kiosk Self Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/kds.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/kitchen.png" alt="" />Kitchen Display System</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/order-tracking.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/order-tracking.png" alt="" />Order Tracking</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/ecommerce.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/ecommerce.png" alt="" />Ecommerce</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/digital-menu-boards.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/digital.png" alt="" />Digital Menu Boards</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/call-center-ordering.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                                <img src="/assets/images/products/call-center.png" alt="" />Call Center Ordering
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/social-media-ordering.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                                <img src="/assets/images/products/social-media.png" alt="" />Social Media Ordering
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/reservations.png" alt="" />Reservations</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/loyalty.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/loyalty-pro.png" alt="" />Loyalty Program</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/payments.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/payments.png" alt="" />Payments </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/inventory.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/inventory-management.png" alt="" />Inventory Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/ai-product.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                                <img src="/assets/images/products/product-recommendations.png" alt="" />Product Recommendations <br />
+                                                using AI
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/tableside.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                                <img src="/assets/images/products/tableside-ordering.png" alt="" />Tableside Ordering / BYOD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/advanced-analytics.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3">
+                                                <img src="/assets/images/products/advanced-reports.png" alt="" />Advanced Reports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/aggregator.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/aggregator.png" alt="" />Aggregator Integration</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/coupons.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/coupons-discounts.png" alt="" />Coupons & Discounts</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../products/email-sms.html" class="block px-4 py-3 hover:bg-[#D243211A] rounded-lg flex gap-3"><img src="/assets/images/products/email-sms.png" alt="" />Email & SMS Marketing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/pricing.html" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Pricing</a></li>
+                            <li><a href="/solutions.html" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Solutions</a></li>
+                            <li><a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Partners</a></li>
+                            <li><a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321] hidden">Resources</a></li>
+                            <li><a href="#" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Company</a></li>
+                            <li><a href="/contactus.html" class="block py-2 px-3 rounded hover:bg-[#D243211A] hover:font-semibold hover:text-[#D24321]">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-[#d3441ecc] p-6 max-sm:space-y-6">
+                    <div class="flex max-sm:flex-col items-center max-sm:space-y-2 text-white">
+                        <a href="tel:+1-678-368-4899" class="flex items-center"><i class="fa-solid fa-phone mr-2 hidden md:block"></i><span>+1-678-368-4899</span></a>
+                        <a href="mailto:sales@ordersune.com" class="flex items-center"><i class="fa-solid fa-envelope mr-2 hidden md:block"></i><span>sales@ordersune.com</span></a>
+                    </div>
+                    <div class="flex items-center space-x-4 justify-center max-sm:space-x-6">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f text-white fa-lg"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter text-white fa-lg"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-white fa-lg"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-white fa-lg"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="bg-[#DC694B] py-4 flex 2xl:justify-center items-center space-x-6 products-nav overflow-auto px-4 hidden" id="productsNav">
+            <a href="../../products/pointofsale.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Point-of-Sale.png" alt="Point of Sale" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Point of Sale</div>
+                </div>
+            </a>
+            <a href="../../products/kds.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Kitchen.png" alt="Kitchen" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Kitchen</div>
+                </div>
+            </a>
+            <a href="../../products/digital-menu-boards.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Digital.png" alt="Digital" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Digital</div>
+                </div>
+            </a>
+            <a href="../../products/kiosk.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Kiosk.png" alt="Kiosk" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Kiosk</div>
+                </div>
+            </a>
+            <a href="../../products/order-tracking.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Order.png" alt="Order" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Order</div>
+                </div>
+            </a>
+            <a href="../../products/ecommerce.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Ecommerce.png" alt="Ecommerce" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Ecommerce</div>
+                </div>
+            </a>
+            <a href="../../products/call-center-ordering.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Call-Center.png" alt="Call Center" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Call Center</div>
+                </div>
+            </a>
+            <a href="../../products/social-media-ordering.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Social-Media.png" alt="Social Media" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Social Media</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Reservations.png" alt="Reservations" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Reservations</div>
+                </div>
+            </a>
+            <a href="../../products/loyalty.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Loyalty.png" alt="Loyalty" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Loyalty</div>
+                </div>
+            </a>
+            <a href="../../products/payments.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Payments.png" alt="Payments" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Payments</div>
+                </div>
+            </a>
+            <a href="../../products/inventory.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Inventory.png" alt="Inventory" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Inventory</div>
+                </div>
+            </a>
+            <a href="../../products/ai-product.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Product.png" alt="Product" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Product</div>
+                </div>
+            </a>
+            <a href="../../products/tableside.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Tableside.png" alt="Tableside" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Tableside</div>
+                </div>
+            </a>
+            <a href="../../products/advanced-analytics.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Advanced.png" alt="Advanced" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Advanced</div>
+                </div>
+            </a>
+            <a href="../../products/aggregator.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Aggregator.png" alt="Aggregator" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Aggregator</div>
+                </div>
+            </a>
+            <a href="../../products/coupons.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/Coupons.png" alt="Coupons" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">Coupons</div>
+                </div>
+            </a>
+            <a href="../../products/email-sms.html">
+                <div class="relative text-center flex flex-col items-center">
+                    <div>
+                        <span class="w-fit rounded-full bg-white p-2.5 flex justify-center items-center"><img class="relative z-[1]" src="/assets/product-Icons/email.png" alt="email-sms" /></span>
+                    </div>
+                    <div class="text hidden top-6 left-1/2 transform bg-white px-4 py-1.5 rounded-lg min-w-[100px] whitespace-nowrap mt-[-23px] text-sm">email-sms</div>
+                </div>
+            </a>
+        </div>
+    </header>
+    
 
     <main class="max-w-screen-2xl ">
 
@@ -47,6 +647,10 @@
                     you
                     need to boost efficiency and engagement. Simplify your digital needs and drive growth effortlessly.
                 </p>
+                <div class="flex max-sm:flex-col max-sm:space-y-4 sm:space-x-4 my-5">
+                    <button class="text-white py-2 md:px-10 px-3 xl:px-6 rounded-lg bg-[#3552C4]">Get a Demo</button>
+                    <button class="border border-[#3552C4] text-[#3552C4] py-2 xl:px-6 px-3 rounded-lg">See Pricing </button>
+                </div>
             </div>
             <div class="col-span-3 relative">
                 <div class="relative font-inter antialiased">
@@ -57,19 +661,24 @@
 
                             <!-- Video thumbnail -->
                             <button
-                                class=" md:p-16 max-sm:px-16 max-sm:pt-10 z-[1] relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
-                                @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
-                                <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out"
-                                    src="/assets/images/home/video.png" width="768" height="432"
-                                    alt="Modal video thumbnail" />
+                            class="md:p-16 max-sm:px-16 max-sm:pt-10 z-[1] relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
+                            @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
+                            <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out"
+                                src="/assets/images/home/video.png" width="768" height="432"
+                                alt="Modal video thumbnail" />
+                            <!-- Container for play icon and text -->
+                            <div class="absolute flex items-center space-x-3 bg-white px-2 md:px-6 py-2 md:py-3 rounded-full shadow-lg transform transition-transform duration-300 group-hover:scale-105">
                                 <!-- Play icon -->
-                                <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                                    xmlns="http://www.w3.org/2000/svg" width="72" height="72">
-                                    <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
-                                    <path class="fill-indigo-500 drop-shadow-2xl"
-                                        d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
-                                </svg>
-                            </button>
+                                <div class="flex items-center justify-center w-8 h-8 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Equilateral triangle play icon -->
+                                        <path d="M6 4.5L19 12L6 19.5V4.5Z" fill="#3552C4"/>
+                                      </svg>
+                                </div>
+                                <!-- Text -->
+                                <span class="text-[#3552C4] font-medium hidden md:block">How OrderSune works</span>
+                            </div>
+                        </button>
                             <img src="/assets/images/home/banner-bg.png" alt="" class="absolute top-0">
 
                             <!-- End: Video thumbnail -->
@@ -113,16 +722,205 @@
                 </div>
             </div>
         </div>
-        <div class="md:px-24 px-4 max-sm:pt-10">
-            <section class="max-sm:space-y-10">
-                <div class="flex max-sm:flex-col max-sm:space-y-4 justify-center sm:space-x-4 md:space-x-10 mb-14">
-                    <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
-">Get a Free
-                        Demo</button>
-                    <button class=" text-white py-3 md:px-10 px-4 rounded-full" style="background: linear-gradient(90deg, #802624 0%, #9A2E2B 25%, #B33632 50%, #E64540 100%);
-">Start a Free
-                        Trial</button>
+
+        <div class="w-full md:px-24 mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
+                <div class="flex flex-col items-center text-center">
+                    <div class="stat-number text-[#D24322] mb-3">
+                        <span class="counter text-5xl font-bold" data-target="20" data-suffix="+">0</span>
+                    </div>
+                    <p class="stat-text text-gray-800 ">
+                        POS, OLO, Mobile Apps & Kiosk Solutions
+                    </p>
                 </div>
+    
+                <div class="flex flex-col items-center text-center">
+                    <div class="stat-number text-[#D24322] mb-3">
+                        <span class="counter text-5xl font-bold" data-target="150" data-suffix="+">0</span>
+                    </div>
+                    <p class="stat-text text-gray-800 ">
+                        External System Integrations
+                    </p>
+                </div>
+    
+                <div class="flex flex-col items-center text-center">
+                    <div class="stat-number text-[#D24322] mb-3">
+                        <span class="counter text-5xl font-bold" data-target="33" data-suffix="K+">0</span>
+                    </div>
+                    <p class="stat-text text-gray-800">
+                        Products with Multi-Level Categories
+                    </p>
+                </div>
+    
+                <div class="flex flex-col items-center text-center">
+                    <div class="stat-number text-[#D24322] mb-3">
+                        <span class="counter text-5xl font-bold" data-target="1" data-suffix="M+">0</span>
+                    </div>
+                    <p class="stat-text text-gray-800 ">
+                        Peak Transactions
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-section py-16">
+            <div class="md:px-24 mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Accessible From Anywhere -->
+                    <div class="feature-card p-6 flex flex-col items-center text-center">
+                        <svg class="feature-icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 16l5 5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class=" font-semibold mb-2">Accessible From Anywhere</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Access our cloud-based system in or out of the restaurant.</p>
+                    </div>
+    
+                    <!-- Offline Mode -->
+                    <div class="feature-card p-6 flex flex-col items-center text-center">
+                        <svg class="feature-icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="font-semibold mb-2">Offline Mode</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Reliable offline mode ensures you're always on.</p>
+                    </div>
+    
+                    <!-- Restaurant-Grade Hardware -->
+                    <div class="feature-card p-6 flex flex-col items-center text-center">
+                        <svg class="feature-icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="font-semibold mb-2">Restaurant-Grade Hardware</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Restaurant-grade hardware takes on everyday spills, drops, and heat.</p>
+                    </div>
+    
+                    <!-- 24/7 Support -->
+                    <div class="feature-card p-6 flex flex-col items-center text-center">
+                        <svg class="feature-icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="font-semibold mb-2">24/7 Support</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Connect with real people who really get it, 24/7.</p>
+                    </div>
+    
+                    <!-- 200+ Integrations -->
+                    <div class="feature-card p-6 flex flex-col items-center text-center">
+                        <svg class="feature-icon icon-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v6m0 12v2M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24M2 12h6m12 0h2M4.93 19.07l4.24-4.24m5.66-5.66l4.24-4.24" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class=" font-semibold mb-2">200+ Integrations</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">200+ integrations sync directly with our POS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="assets/images/pos.png" alt="" class="w-full">
+        </div>
+
+        <div class="max-w-6xl  mx-auto ">
+            <div class="bg-white   rounded-lg shadow-2xl md:px-16 px-4 py-16 my-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Left Column - Text Content -->
+                    <div class="space-y-4">
+                        <h2 class="text-3xl font-semibold text-gray-700">
+                            We'd love to answer your questions
+                        </h2>
+                        <p class="text-gray-600">
+                            Get a personalized online demo and see what else Toast can do for you.
+                        </p>
+                    </div>
+    
+                    <!-- Right Column - Form -->
+                    <div>
+                        <form id="demoForm" class="space-y-4">
+                            <div>
+                                <input
+                                    type="text"
+                                    name="fullName"
+                                    placeholder="First and last name*"
+                                    required
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md"
+                                />
+                            </div>
+    
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email Address*"
+                                    required
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md"
+                                />
+                            </div>
+    
+                            <div>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone number*"
+                                    required
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md"
+                                />
+                            </div>
+    
+                            <div>
+                                <input
+                                    type="text"
+                                    name="restaurantName"
+                                    placeholder="Restaurant Name*"
+                                    required
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md"
+                                />
+                            </div>
+    
+                            <div>
+                                <input
+                                    type="text"
+                                    name="zipCode"
+                                    placeholder="Primary restaurant location zip code*"
+                                    required
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md"
+                                />
+                            </div>
+    
+                            <div>
+                                <select
+                                    name="businessType"
+                                    class="form-input w-full p-3 border border-gray-300 rounded-md appearance-none bg-white"
+                                    required
+                                >
+                                    <option value="">Which best describes you?</option>
+                                    <option value="restaurant">Restaurant Owner</option>
+                                    <option value="manager">Restaurant Manager</option>
+                                    <option value="staff">Restaurant Staff</option>
+                                </select>
+                            </div>
+    
+                            <button
+                                type="submit"
+                                class="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                            >
+                                Get a Demo
+                            </button>
+    
+                            <p class="text-xs text-gray-500 mt-4">
+                                By requesting a demo, you agree to receive automated text messages from Toast. We'll handle your info according to our
+                                <a href="#" class="text-blue-600 hover:underline">privacy statement</a>.
+                                Additional information for California residents available
+                                <a href="#" class="text-blue-600 hover:underline">here</a>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:px-24 px-4 max-sm:pt-10 hidden">
+            <section class="max-sm:space-y-10">
+              
 
                 <div>
                     <h2 class="text-3xl font-bold">Effortlessly sell anywhere, anytime with ordersune</h2>
@@ -488,6 +1286,91 @@
     <script src="/assets/js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        
+        const animate = (counter) => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const suffix = counter.getAttribute('data-suffix');
+            const duration = 2000; // 2 seconds
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    counter.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    counter.textContent = Math.floor(current) + suffix;
+                }
+            }, duration / steps);
+        };
+
+        // Start animation when elements are in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animate(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+    <script>
+        document.getElementById('demoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Basic validation
+            let isValid = true;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phoneRegex = /^\d{10}$/;
+            const zipRegex = /^\d{5}(-\d{4})?$/;
+
+            if (!emailRegex.test(data.email)) {
+                alert('Please enter a valid email address');
+                isValid = false;
+            }
+
+            if (!phoneRegex.test(data.phone.replace(/\D/g, ''))) {
+                alert('Please enter a valid 10-digit phone number');
+                isValid = false;
+            }
+
+            if (!zipRegex.test(data.zipCode)) {
+                alert('Please enter a valid ZIP code');
+                isValid = false;
+            }
+
+            if (isValid) {
+                console.log('Form submitted:', data);
+                // Here you would typically send the data to your server
+                alert('Thank you! We will contact you soon.');
+                this.reset();
+            }
+        });
+
+        // Format phone number as user types
+        document.querySelector('input[name="phone"]').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 3) {
+                    value = value;
+                } else if (value.length <= 6) {
+                    value = value.slice(0,3) + '-' + value.slice(3);
+                } else {
+                    value = value.slice(0,3) + '-' + value.slice(3,6) + '-' + value.slice(6,10);
+                }
+            }
+            e.target.value = value;
+        });
+    </script>
 </body>
 
 </html>
